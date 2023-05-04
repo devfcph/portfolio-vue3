@@ -7,22 +7,20 @@
           <!-- Start Hero Caption -->
           <div class="hero-caption">
             <span class="subheading">Hey! I am</span>
-            <h1>Karim EzZat !</h1>
+            <h1>Francisco Pérez</h1>
             <div>
               I'm a
               <div id="typed-strings">
               <!-- Animated Text Writer -->
-              <span>Freelancer.</span>
-              <span>Web Designer.</span>
-              <span>Developer.</span>
-              <span>Photographer.</span>
-              <span>Marketer.</span>
+              <span>Software developer</span>
+              <span>Software developer</span>
+              
             </div>
             <span class="LR-C" id="typed" style="white-space:pre;"></span>
             </div>
             <p>
-              Dorem ipsum dolor sitamet, consectetur adipiscing elit, sed do
-              eiusm tempor incididunt ulabore et dolore magna aliqua.
+              Welcome to all the challenges that make me grow professionally and personally! 🧑‍💻
+              
             </p>
             <a href="#" class="btn radius-btn">Download</a>
           </div>

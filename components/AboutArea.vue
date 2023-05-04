@@ -19,24 +19,24 @@
           <!-- Start About Detail -->
           <div class="about-details">
             <div class="section-title mb-50">
-              <h2>About Me</h2>
+              <h2>About me</h2>
             </div>
+            <p>An enthusiastic software developer with over 5 years of IT work experience. </p>
             <p>
-              I’m a Front End Developer. I have a Passion for Creating Clean,
-              Beautiful, Interactive, Minimalistic, Responsive and User Friendly
-              UI, Developed by Modular, Scalable and Functional Code.
-            </p>
+              I consider myself a person with logical and critical thinking, analytical and focused on problem solving. 🧠 </p>
+              <hr>
+              <p>I have a passion for the challenges that are presented to me every day, since each one of them is an opportunity to test my skills, qualities and experience as a programmer. 📈</p>
             <ul class="about-info mt-4">
-              <li><span>Name:</span> <span>Karim EzZat</span></li>
+              <li><span>Name:</span> <span>Francisco Cristóbal Pérez Hernández</span></li>
               <li>
-                <span>Date of birth:</span> <span>November 28, 1993</span>
+                <span>Date of birth:</span> <span>October 12, 1997</span>
               </li>
               <li>
-                <span>Address:</span> <span>Mansoura El-Dakahlia, Egypt</span>
+                <span>Address:</span> <span>Mexico City</span>
               </li>
-              <li><span>Zip code:</span> <span>1234</span></li>
-              <li><span>Email:</span> <span>karim@gmail.com</span></li>
-              <li><span>Phone: </span> <span>+1-2345-6789-0-0</span></li>
+              <li><span>Zip code:</span> <span>01790</span></li>
+              <li><span>Email:</span> <span>devfcph@gmail.com</span></li>
+              <li><span>Phone: </span> <span>+52 961 372 34 12</span></li>
             </ul>
             <div class="download-btn mt-5">
               <a class="btn radius-btn" href="#">Download Cv</a>
