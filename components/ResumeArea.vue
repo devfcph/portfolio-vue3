@@ -35,9 +35,9 @@
                 <span class="icon-graduation"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h4>Bachelor in Computer Science</h4>
-                <span class="position">Mansoura University</span>
+                <span class="date">2016 - 2022</span>
+                <h4>Software Development and Technology Engineering</h4>
+                <span class="position">Autonomous University of Chiapas</span>
                 <p>
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
                   used in laying out print, graphic or web designs. The passage
@@ -53,27 +53,10 @@
                 <span class="icon-graduation"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h4>Diploma in Computer</h4>
-                <span class="position">Mansoura University</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-graduation"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h4>Art &amp; Creative Director</h4>
-                <span class="position">Mansoura University</span>
+                <span class="date">January 2020 - June 2020</span>
+                <h4>Interchange Student</h4>
+                <h4>Colombia</h4>
+                <span class="position">University of Boyacá</span>
                 <p>
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
                   used in laying out print, graphic or web designs. The passage
@@ -95,9 +78,10 @@
                 <span class="icon-briefcase"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h4>Software Developer</h4>
-                <span class="position">Mansoura University</span>
+                <span class="date">Oct 2022 - Actuallity</span>
+                <h4>Microservices Developer</h4>
+                <span class="position">Grupo Salinas</span>
+                <span class="position"> - Hybrid</span>
                 <p>
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
                   used in laying out print, graphic or web designs. The passage
@@ -113,9 +97,10 @@
                 <span class="icon-briefcase"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h4>Web Marketing</h4>
-                <span class="position">Mansoura University</span>
+                <span class="date">Jul 2022 - Oct 2022</span>
+                <h4>iOS Mobile Developer</h4>
+                <span class="position">Gonet</span>
+                <span class="position"> - Remote</span>
                 <p>
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
                   used in laying out print, graphic or web designs. The passage
@@ -132,9 +117,50 @@
                 <span class="icon-briefcase"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">2017-2018</span>
-                <h4>UI/UX Designer</h4>
-                <span class="position">Mansoura University</span>
+                <span class="date">Oct 2020 - Oct - 2022</span>
+                <h4>Fullstack developer / DBA </h4>
+                <span class="position">Secretaría de Hacienda del Estado de Chiapas</span>
+                <span class="position"> - On site</span>
+                <p>
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. The passage
+                  is attributed to an unknown typesetter in the 15th century who
+                  is thought to have.
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-wrap transition d-flex">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-briefcase"></span>
+              </div>
+              <div class="text pl-3">
+                <span class="date">Jun 2020 - Oct - 2020</span>
+                <h4>Fullstack developer </h4>
+                <span class="position">Global Transfer</span>
+                <span class="position"> - On Site</span>
+                <p>
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. The passage
+                  is attributed to an unknown typesetter in the 15th century who
+                  is thought to have.
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-wrap transition d-flex">
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <span class="icon-briefcase"></span>
+              </div>
+              <div class="text pl-3">
+                <span class="date">Ago 2018 - Jan 2020</span>
+                <h4>Fullstack developer Jr</h4>
+                <span class="position">Induxsoft Data Services</span>
+                <span class="position"> - On Site</span>
                 <p>
                   Lorem ipsum, or lipsum as it is sometimes known, is dummy text
                   used in laying out print, graphic or web designs. The passage

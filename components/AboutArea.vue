@@ -21,7 +21,7 @@
             <div class="section-title mb-50">
               <h2>About me</h2>
             </div>
-            <p>An enthusiastic software developer with over 5 years of IT work experience. </p>
+            <p>An enthusiastic software developer with over 4 years of IT work experience. </p>
             <p>
               I consider myself a person with logical and critical thinking, analytical and focused on problem solving. 🧠 </p>
               <hr>
