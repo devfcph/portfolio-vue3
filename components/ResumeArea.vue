@@ -13,7 +13,11 @@
       <!-- End Section Title -->
       <div class="row">
         <div class="col-lg-3 d-none d-lg-block">
+          <ResumeNavComponent v-bind:infoNav="infoNav"></ResumeNavComponent>
+          
+
           <!-- Start Resume Nav -->
+          <!--
           <nav id="navi">
             <ul>
               <li><a href="#page-1">Education</a></li>
@@ -21,7 +25,7 @@
               <li><a href="#page-3">Skills</a></li>
               <li><a href="#page-4">Awards</a></li>
             </ul>
-          </nav>
+          </nav> -->
           <!-- End Resume Nav -->
         </div>
         <div class="col-lg-9 col-md-12">
@@ -117,7 +121,7 @@
                 <span class="icon-briefcase"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">Oct 2020 - Oct - 2022</span>
+                <span class="date">Oct 2020 - Oct 2022</span>
                 <h4>Fullstack developer / DBA </h4>
                 <span class="position">Secretaría de Hacienda del Estado de Chiapas</span>
                 <span class="position"> - On site</span>
@@ -137,7 +141,7 @@
                 <span class="icon-briefcase"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">Jun 2020 - Oct - 2020</span>
+                <span class="date">Jul 2020 - Oct 2020</span>
                 <h4>Fullstack developer </h4>
                 <span class="position">Global Transfer</span>
                 <span class="position"> - On Site</span>
@@ -305,8 +309,25 @@
   </section>
   <!-- Resume Area End -->
 </template>
+
+
 <script>
+import ResumeNavComponent from './global/ResumeNav.vue';
+
 export default {
-  name: "ResumeArea"
+  name: "ResumeArea",
+  components: {
+    ResumeNavComponent
+  },
+  data() {
+    return {
+      infoNav:[
+        { label: "Education", href: "#page-1" },
+        { label: "Experience", href: "#page-2" },
+        { label: "Skills", href: "#page-3" },
+        { label: "Awards", href: "#page-4" },
+      ]
+    }
+  }
 };
 </script>
