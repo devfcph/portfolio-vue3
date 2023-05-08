@@ -6,11 +6,7 @@
         <div class="col-lg-6 d-none d-lg-block">
           <!-- Start About Area Image -->
           <div class="img-about">
-            <img
-              class="img-fluid"
-              src="https://via.placeholder.com/824x1024"
-              alt="abou me"
-            />
+            <img class="img-fluid" v-bind:src="imgMe" alt="abou me" />
           </div>
           <!-- End About Area Image -->
         </div>
@@ -21,19 +17,27 @@
             <div class="section-title mb-50">
               <h2>About me</h2>
             </div>
-            <p>An enthusiastic software developer with over 4 years of IT work experience. </p>
             <p>
-              I consider myself a person with logical and critical thinking, analytical and focused on problem solving. 🧠 </p>
-              <hr>
-              <p>I have a passion for the challenges that are presented to me every day, since each one of them is an opportunity to test my skills, qualities and experience as a programmer. 📈</p>
+              An enthusiastic software developer with over 4 years of IT work
+              experience.
+            </p>
+            <p>
+              I consider myself a person with logical and critical thinking,
+              analytical and focused on problem solving. 🧠
+            </p>
+            <hr />
+            <p>
+              I have a passion for the challenges that are presented to me every
+              day, since each one of them is an opportunity to test my skills,
+              qualities and experience as a programmer. 📈
+            </p>
             <ul class="about-info mt-4">
-              <li><span>Name:</span> <span>Francisco Cristóbal Pérez Hernández</span></li>
               <li>
-                <span>Date of birth:</span> <span>October 12, 1997</span>
+                <span>Name:</span>
+                <span>Francisco Cristóbal Pérez Hernández</span>
               </li>
-              <li>
-                <span>Address:</span> <span>Mexico City</span>
-              </li>
+              <li><span>Date of birth:</span> <span>October 12, 1997</span></li>
+              <li><span>Address:</span> <span>Mexico City</span></li>
               <li><span>Zip code:</span> <span>01790</span></li>
               <li><span>Email:</span> <span>devfcph@gmail.com</span></li>
               <li><span>Phone: </span> <span>+52 961 372 34 12</span></li>
@@ -52,6 +56,18 @@
 
 <script>
 export default {
-  name: "AboutArea"
+  name: "AboutArea",
+  data() {
+    return {
+      //img_default: 'https://via.placeholder.com/824x1024',
+      //img_me: '../static/assets/img/about/1082318.jpg',
+      //img_profile: this.img_default,
+    };
+  },
+  computed: {
+    imgMe() {
+      return 'https://via.placeholder.com/824x1024';
+    },
+  }
 };
 </script>
