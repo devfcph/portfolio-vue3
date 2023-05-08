@@ -3,18 +3,13 @@
   <section class="resume-area section-padding" id="resume">
     <div class="container">
       <!-- Start Section Title -->
-      <div class="row mb-50">
-        <div class="col-lg-12">
-          <div class="section-title">
-            <h2>Resume</h2>
-          </div>
-        </div>
-      </div>
+      <TitleComponent :title="sectionTitle"></TitleComponent>
       <!-- End Section Title -->
       <div class="row">
         <div class="col-lg-3 d-none d-lg-block">
+          <!-- Start Resume Nav -->
           <ResumeNavComponent v-bind:infoNav="infoNav"></ResumeNavComponent>
-          
+          <!-- End Resume Nav -->
 
           <!-- Start Resume Nav -->
           <!--
@@ -313,11 +308,13 @@
 
 <script>
 import ResumeNavComponent from './global/ResumeNav.vue';
+import TitleComponent from './title/SectionTitle.vue';
 
 export default {
   name: "ResumeArea",
   components: {
-    ResumeNavComponent
+    ResumeNavComponent,
+    TitleComponent
   },
   data() {
     return {
@@ -326,7 +323,8 @@ export default {
         { label: "Experience", href: "#page-2" },
         { label: "Skills", href: "#page-3" },
         { label: "Awards", href: "#page-4" },
-      ]
+      ],
+      sectionTitle: "Resume",
     }
   }
 };
