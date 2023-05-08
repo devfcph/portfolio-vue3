@@ -16,10 +16,11 @@
           <div id="page-1" class="page one">
             <h3 class="heading">Education</h3>
             <ItemCardComponent
-              v-bind:isEducationItem="true"  
+              v-bind:icon="icon.EDUCATION"
               v-for="(school, index) in schools"
               v-bind:key="index"
-              v-bind:infoItem="school">
+              v-bind:infoItem="school"
+            >
               {{ school }}
             </ItemCardComponent>
           </div>
@@ -29,10 +30,11 @@
           <div id="page-2" class="page two">
             <h3 class="heading">Experience</h3>
             <ItemCardComponent
-              v-bind:isEducationItem="false"  
+            v-bind:icon="icon.EXPERIENCE"
               v-for="(experience, index) in experiences"
               v-bind:key="index"
-              v-bind:infoItem="experience">
+              v-bind:infoItem="experience"
+            >
               {{ experience }}
             </ItemCardComponent>
           </div>
@@ -46,9 +48,9 @@
                 v-for="(skill, index) in skills"
                 v-bind:key="index"
                 v-bind:skill="skill"
-              > 
-              {{ skill }}
-            </SkillProgressBarComponent>
+              >
+                {{ skill }}
+              </SkillProgressBarComponent>
             </div>
           </div>
           <!-- End Skills -->
@@ -124,7 +126,8 @@
 import ResumeNavComponent from "./global/ResumeNav.vue";
 import TitleComponent from "./title/SectionTitle.vue";
 import ItemCardComponent from "./cards/ResumeItemCard.vue";
-import SkillProgressBarComponent from './global/SkillProgressBar.vue';
+import SkillProgressBarComponent from "./global/SkillProgressBar.vue";
+import { typeOfIcon } from "../helpers/constants";
 
 export default {
   name: "ResumeArea",
@@ -132,7 +135,7 @@ export default {
     ResumeNavComponent,
     TitleComponent,
     ItemCardComponent,
-    SkillProgressBarComponent
+    SkillProgressBarComponent,
   },
   data() {
     return {
@@ -196,10 +199,11 @@ export default {
         },
       ],
       skills: [
-        { title: "A B C D E F G H", percent: "50%"},
-        { title: "A B C D E F G H", percent: "75%"},
-        { title: "A B C D E F G H", percent: "99%"},
-       ]
+        { title: "A B C D E F G H", percent: "50%" },
+        { title: "A B C D E F G H", percent: "75%" },
+        { title: "A B C D E F G H", percent: "99%" },
+      ],
+      icon: typeOfIcon,
     };
   },
 };
