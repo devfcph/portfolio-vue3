@@ -42,73 +42,20 @@
           <div id="page-3" class="page three">
             <h3 class="heading">Skills</h3>
             <div class="row">
-              <div class="col-md-6">
-                <div class="progress-wrap">
-                  <h5>Photoshop</h5>
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 90%">
-                      <span>90%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-wrap">
-                  <h5>jQuery</h5>
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 85%">
-                      <span>85%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-wrap">
-                  <h5>HTML5</h5>
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 95%">
-                      <span>95%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-wrap">
-                  <h5>CSS3</h5>
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 90%">
-                      <span>90%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-wrap">
-                  <h5>WordPress</h5>
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 70%">
-                      <span>70%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="progress-wrap">
-                  <h5>SEO</h5>
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 80%">
-                      <span>80%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <SkillProgressBarComponent
+                v-for="(skill, index) in skills"
+                v-bind:key="index"
+                v-bind:skill="skill"
+              > 
+              {{ skill }}
+            </SkillProgressBarComponent>
             </div>
           </div>
           <!-- End Skills -->
 
           <!-- Start Awards -->
           <div id="page-4" class="page four">
-            <h3 class="heading">Awards</h3>
+            <h3 class="heading">Courses</h3>
             <div class="resume-wrap transition d-flex">
               <div
                 class="icon d-flex align-items-center justify-content-center"
@@ -177,6 +124,7 @@
 import ResumeNavComponent from "./global/ResumeNav.vue";
 import TitleComponent from "./title/SectionTitle.vue";
 import ItemCardComponent from "./cards/ResumeItemCard.vue";
+import SkillProgressBarComponent from './global/SkillProgressBar.vue';
 
 export default {
   name: "ResumeArea",
@@ -184,6 +132,7 @@ export default {
     ResumeNavComponent,
     TitleComponent,
     ItemCardComponent,
+    SkillProgressBarComponent
   },
   data() {
     return {
@@ -246,6 +195,11 @@ export default {
           body: "CHEEMS",
         },
       ],
+      skills: [
+        { title: "A B C D E F G H", percent: "50%"},
+        { title: "A B C D E F G H", percent: "75%"},
+        { title: "A B C D E F G H", percent: "99%"},
+       ]
     };
   },
 };
