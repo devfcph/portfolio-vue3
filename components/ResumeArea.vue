@@ -78,7 +78,7 @@
 
 <script>
 import ResumeNavComponent from "./global/ResumeNav.vue";
-import TitleComponent from "./title/SectionTitle.vue";
+import TitleComponent from "./labels/SectionTitle.vue";
 import ItemCardComponent from "./cards/ResumeItemCard.vue";
 import SkillProgressBarComponent from "./global/SkillProgressBar.vue";
 import { typeOfIcon } from "../helpers/constants";
