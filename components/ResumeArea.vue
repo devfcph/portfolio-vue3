@@ -10,164 +10,31 @@
           <!-- Start Resume Nav -->
           <ResumeNavComponent v-bind:infoNav="infoNav"></ResumeNavComponent>
           <!-- End Resume Nav -->
-
-          <!-- Start Resume Nav -->
-          <!--
-          <nav id="navi">
-            <ul>
-              <li><a href="#page-1">Education</a></li>
-              <li><a href="#page-2">Experience</a></li>
-              <li><a href="#page-3">Skills</a></li>
-              <li><a href="#page-4">Awards</a></li>
-            </ul>
-          </nav> -->
-          <!-- End Resume Nav -->
         </div>
         <div class="col-lg-9 col-md-12">
           <!-- Start Education -->
           <div id="page-1" class="page one">
             <h3 class="heading">Education</h3>
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-graduation"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2016 - 2022</span>
-                <h4>Software Development and Technology Engineering</h4>
-                <span class="position">Autonomous University of Chiapas</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-graduation"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">January 2020 - June 2020</span>
-                <h4>Interchange Student</h4>
-                <h4>Colombia</h4>
-                <span class="position">University of Boyacá</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
+            <ItemCardComponent
+              v-bind:isEducationItem="true"  
+              v-for="(school, index) in schools"
+              v-bind:key="index"
+              v-bind:infoItem="school">
+              {{ school }}
+            </ItemCardComponent>
           </div>
           <!-- End Education -->
 
           <!-- Start Experience -->
           <div id="page-2" class="page two">
             <h3 class="heading">Experience</h3>
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-briefcase"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">Oct 2022 - Actuallity</span>
-                <h4>Microservices Developer</h4>
-                <span class="position">Grupo Salinas</span>
-                <span class="position"> - Hybrid</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-briefcase"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">Jul 2022 - Oct 2022</span>
-                <h4>iOS Mobile Developer</h4>
-                <span class="position">Gonet</span>
-                <span class="position"> - Remote</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-briefcase"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">Oct 2020 - Oct 2022</span>
-                <h4>Fullstack developer / DBA </h4>
-                <span class="position">Secretaría de Hacienda del Estado de Chiapas</span>
-                <span class="position"> - On site</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-briefcase"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">Jul 2020 - Oct 2020</span>
-                <h4>Fullstack developer </h4>
-                <span class="position">Global Transfer</span>
-                <span class="position"> - On Site</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-briefcase"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">Ago 2018 - Jan 2020</span>
-                <h4>Fullstack developer Jr</h4>
-                <span class="position">Induxsoft Data Services</span>
-                <span class="position"> - On Site</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
+            <ItemCardComponent
+              v-bind:isEducationItem="false"  
+              v-for="(experience, index) in experiences"
+              v-bind:key="index"
+              v-bind:infoItem="experience">
+              {{ experience }}
+            </ItemCardComponent>
           </div>
           <!-- End Experience -->
 
@@ -179,7 +46,7 @@
                 <div class="progress-wrap">
                   <h5>Photoshop</h5>
                   <div class="progress">
-                    <div class="progress-bar" style="width:90%">
+                    <div class="progress-bar" style="width: 90%">
                       <span>90%</span>
                     </div>
                   </div>
@@ -189,7 +56,7 @@
                 <div class="progress-wrap">
                   <h5>jQuery</h5>
                   <div class="progress">
-                    <div class="progress-bar" style="width:85%">
+                    <div class="progress-bar" style="width: 85%">
                       <span>85%</span>
                     </div>
                   </div>
@@ -199,7 +66,7 @@
                 <div class="progress-wrap">
                   <h5>HTML5</h5>
                   <div class="progress">
-                    <div class="progress-bar" style="width:95%">
+                    <div class="progress-bar" style="width: 95%">
                       <span>95%</span>
                     </div>
                   </div>
@@ -209,7 +76,7 @@
                 <div class="progress-wrap">
                   <h5>CSS3</h5>
                   <div class="progress">
-                    <div class="progress-bar" style="width:90%">
+                    <div class="progress-bar" style="width: 90%">
                       <span>90%</span>
                     </div>
                   </div>
@@ -219,7 +86,7 @@
                 <div class="progress-wrap">
                   <h5>WordPress</h5>
                   <div class="progress">
-                    <div class="progress-bar" style="width:70%">
+                    <div class="progress-bar" style="width: 70%">
                       <span>70%</span>
                     </div>
                   </div>
@@ -229,7 +96,7 @@
                 <div class="progress-wrap">
                   <h5>SEO</h5>
                   <div class="progress">
-                    <div class="progress-bar" style="width:80%">
+                    <div class="progress-bar" style="width: 80%">
                       <span>80%</span>
                     </div>
                   </div>
@@ -307,25 +174,79 @@
 
 
 <script>
-import ResumeNavComponent from './global/ResumeNav.vue';
-import TitleComponent from './title/SectionTitle.vue';
+import ResumeNavComponent from "./global/ResumeNav.vue";
+import TitleComponent from "./title/SectionTitle.vue";
+import ItemCardComponent from "./cards/ResumeItemCard.vue";
 
 export default {
   name: "ResumeArea",
   components: {
     ResumeNavComponent,
-    TitleComponent
+    TitleComponent,
+    ItemCardComponent,
   },
   data() {
     return {
-      infoNav:[
+      infoNav: [
         { label: "Education", href: "#page-1" },
         { label: "Experience", href: "#page-2" },
         { label: "Skills", href: "#page-3" },
         { label: "Awards", href: "#page-4" },
       ],
       sectionTitle: "Resume",
-    }
-  }
+      experiences: [
+        {
+          date: "Oct 2022 - Actuallity",
+          city: "Mexico City. México",
+          title: "Microservices Developer",
+          place: "Grupo Salinas [Hybrid]",
+          body: "Lorem ipsum, or lipsum as it is sometimes known",
+        },
+        {
+          date: "Jul 2022 - Oct 2022",
+          title: "iOS Mobile Developer",
+          place: "Gonet [Remote]",
+          body: "CHEEMS",
+        },
+        {
+          date: "Oct 2020 - Oct 2022",
+          city: "Tuxtla Gutiérrez, Chiapas. México",
+          title: "Fullstack developer",
+          place: "Secretaría de Hacienda del Estado de Chiapas [On site]",
+          body: "Lorem ipsum, or lipsum as it is sometimes known",
+        },
+        {
+          date: "Jul 2020 - Oct 2020",
+          city: "Tuxtla Gutiérrez, Chiapas. México",
+          title: "Fullstack developer",
+          place: "Global Transfer [On site]",
+          body: "Lorem ipsum, or lipsum as it is sometimes known",
+        },
+        {
+          date: "Ago 2018 - Jan 2020",
+          city: "Tuxtla Gutiérrez, Chiapas. México",
+          title: "Fullstack developer",
+          place: "Induxsoft Data Services [On site]",
+          body: "Lorem ipsum, or lipsum as it is sometimes known",
+        },
+      ],
+      schools: [
+        {
+          date: "2016 - 2022",
+          city: "Tuxtla Gutiérrez, Chiapas. México",
+          title: "Software Development and Technology Engineering",
+          place: "Autonomous University of Chiapas",
+          body: "Lorem ipsum, or lipsum as it is sometimes known",
+        },
+        {
+          date: "January 2020 - June 2020",
+          city: "Tunja, Boyacá. Colombia",
+          title: "Interchange Student",
+          place: "University of Boyacá",
+          body: "CHEEMS",
+        },
+      ],
+    };
+  },
 };
 </script>
