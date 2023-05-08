@@ -30,7 +30,7 @@
           <div id="page-2" class="page two">
             <h3 class="heading">Experience</h3>
             <ItemCardComponent
-            v-bind:icon="icon.EXPERIENCE"
+              v-bind:icon="icon.EXPERIENCE"
               v-for="(experience, index) in experiences"
               v-bind:key="index"
               v-bind:infoItem="experience"
@@ -58,60 +58,14 @@
           <!-- Start Awards -->
           <div id="page-4" class="page four">
             <h3 class="heading">Courses</h3>
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-badge"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h4>Top 10 Web Developer</h4>
-                <span class="position">Mansoura University</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-badge"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h4>Top 5 LeaderShip Exellence Winner</h4>
-                <span class="position">Mansoura University</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
-            <div class="resume-wrap transition d-flex">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-badge"></span>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h4>Top 4 Web Tester</h4>
-                <span class="position">Mansoura University</span>
-                <p>
-                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                  used in laying out print, graphic or web designs. The passage
-                  is attributed to an unknown typesetter in the 15th century who
-                  is thought to have.
-                </p>
-              </div>
-            </div>
+            <ItemCardComponent
+              v-bind:icon="icon.LEARN"
+              v-for="(course, index) in courses"
+              v-bind:key="index"
+              v-bind:infoItem="course"
+            >
+              {{ course }}
+            </ItemCardComponent>
           </div>
           <!-- End Awards -->
         </div>
@@ -202,6 +156,14 @@ export default {
         { title: "A B C D E F G H", percent: "50%" },
         { title: "A B C D E F G H", percent: "75%" },
         { title: "A B C D E F G H", percent: "99%" },
+      ],
+      courses: [
+        {
+          date: "January 2020 - June 2020",
+          title: "NOMBRE DEL CURSO",
+          place: "PLATZI ACADEMY",
+          body: "CHEEMS",
+        },
       ],
       icon: typeOfIcon,
     };
