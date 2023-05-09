@@ -10,27 +10,17 @@
             <h1>Francisco Pérez</h1>
             <div>
               I'm a
-              <div id="typed-strings">
-              <!-- Animated Text Writer -->
-              <span>Software developer</span>
-              <span>Software developer</span>
-              
+              <TypedString v-bind:text="iamTypedString"></TypedString>
+              <span class="LR-C" id="typed" style="white-space: pre"></span>
             </div>
-            <span class="LR-C" id="typed" style="white-space:pre;"></span>
-            </div>
-            <p>
-              Welcome to all the challenges that make me grow professionally and personally! 🧑‍💻
-              
-            </p>
+            <SimpleText :text="phrase"></SimpleText>
             <a href="#" class="btn radius-btn">Download</a>
           </div>
           <!-- End Hero Caption -->
         </div>
         <div class="col-lg-6 d-none d-lg-block">
           <!-- Hero Right Image -->
-          <div class="hero-img">
-            <img src="https://via.placeholder.com/500x716" alt="Hero image" />
-          </div>
+          <AboutMeImage></AboutMeImage>
         </div>
       </div>
     </div>
@@ -44,7 +34,22 @@
 </template>
 
 <script>
+import AboutMeImage from "./images/AboutMeImage.vue";
+import SimpleText from "./labels/SimpleText.vue";
+import TypedString from "./labels/TypedString.vue";
+
 export default {
-  name: "HeroArea"
+  name: "HeroArea",
+  components: {
+    AboutMeImage,
+    SimpleText,
+    TypedString
+  },
+  data() {
+    return {
+      phrase: " Welcome to all the challenges that make me grow professionally and personally! 🧑‍💻",
+      iamTypedString: "Software Developer"
+    }
+  }
 };
 </script>
