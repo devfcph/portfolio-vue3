@@ -29,12 +29,5 @@ export default {
       AboutMeImage,
       AboutMeInfo,
     },
-    data() {
-        return {
-        //img_default: 'https://via.placeholder.com/824x1024',
-        //img_me: '../static/assets/img/about/1082318.jpg',
-        //img_profile: this.img_default,
-        };
-    },
 };
 </script>
