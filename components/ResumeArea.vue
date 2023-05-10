@@ -58,14 +58,17 @@
           <!-- Start Awards -->
           <div id="page-4" class="page four">
             <h3 class="heading">Courses</h3>
-            <ItemCardComponent
-              v-bind:icon="icon.LEARN"
-              v-for="(course, index) in courses"
-              v-bind:key="index"
-              v-bind:infoItem="course"
-            >
-              {{ course }}
-            </ItemCardComponent>
+            <div class="row">
+              <ItemCardComponent
+                class="mx-auto col-sm-12 col-md-5 col-lg-5 col-xs-12 px-0"
+                v-bind:icon="icon.LEARN"
+                v-for="(course, index) in courses"
+                v-bind:key="index"
+                v-bind:infoItem="course"
+              >
+                {{ course }}
+              </ItemCardComponent>
+            </div>
           </div>
           <!-- End Awards -->
         </div>
@@ -158,6 +161,48 @@ export default {
         { title: "A B C D E F G H", percent: "99%" },
       ],
       courses: [
+        {
+          date: "January 2020 - June 2020",
+          title: "NOMBRE DEL CURSO",
+          place: "PLATZI ACADEMY",
+          body: "CHEEMS",
+        },
+        {
+          date: "January 2020 - June 2020",
+          title: "NOMBRE DEL CURSO",
+          place: "PLATZI ACADEMY",
+          body: "CHEEMS",
+        },
+        {
+          date: "January 2020 - June 2020",
+          title: "NOMBRE DEL CURSO",
+          place: "PLATZI ACADEMY",
+          body: "CHEEMS",
+        },
+        {
+          date: "January 2020 - June 2020",
+          title: "NOMBRE DEL CURSO",
+          place: "PLATZI ACADEMY",
+          body: "CHEEMS",
+        },
+        {
+          date: "January 2020 - June 2020",
+          title: "NOMBRE DEL CURSO",
+          place: "PLATZI ACADEMY",
+          body: "CHEEMS",
+        },
+        {
+          date: "January 2020 - June 2020",
+          title: "NOMBRE DEL CURSO",
+          place: "PLATZI ACADEMY",
+          body: "CHEEMS",
+        },
+        {
+          date: "January 2020 - June 2020",
+          title: "NOMBRE DEL CURSO",
+          place: "PLATZI ACADEMY",
+          body: "CHEEMS",
+        },
         {
           date: "January 2020 - June 2020",
           title: "NOMBRE DEL CURSO",
