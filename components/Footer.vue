@@ -12,10 +12,11 @@
               <h4>Follow Me</h4>
             </div>
             <div class="footer-social text-center">
-              <a href="#"><i class="fa fa-facebook transition"></i></a>
-              <a href="#"><i class="fa fa-twitter transition"></i></a>
-              <a href="#"><i class="fa fa-dribbble transition"></i></a>
-              <a href="#"><i class="fa fa-behance transition"></i></a>
+              <SocialNetwork
+              v-for="(logo, index) in logos"
+              v-bind:key="index"
+              v-bind:logo="logo"
+              ></SocialNetwork>
             </div>
           </div>
         </div>
@@ -34,7 +35,35 @@
   <!-- End Footer -->
 </template>
 <script>
+import { typeOfIcon } from "../helpers/constants";
+import SocialNetwork from "./footer/SocialNetwork.vue";
+
 export default {
-  name: "Footer"
+  name: "Footer",
+  components: {
+    SocialNetwork,
+  },
+  data() {
+    return {
+      logos: [
+        {
+          href: "#",
+          icon: typeOfIcon.FACEBOOK,
+        },
+        {
+          href: "#",
+          icon: typeOfIcon.TWITTER,
+        },
+        {
+          href: "#",
+          icon: typeOfIcon.DRIBBBLE,
+        },
+        {
+          href: "#",
+          icon: typeOfIcon.BEHANCE,
+        },
+      ],
+    };
+  },
 };
 </script>
