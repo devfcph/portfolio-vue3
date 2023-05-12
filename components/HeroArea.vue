@@ -26,9 +26,7 @@
     </div>
 
     <!-- Hero Animated Shape -->
-    <div class="hero-shape custom-animation">
-      <img src="assets/img/hero/hero-shape.png" alt="animation shape" />
-    </div>
+    <AnimationImage></AnimationImage>
   </section>
   <!-- Welcome Area End -->
 </template>
@@ -37,13 +35,15 @@
 import AboutMeImage from "./images/AboutMeImage.vue";
 import SimpleText from "./labels/SimpleText.vue";
 import TypedString from "./labels/TypedString.vue";
+import AnimationImage from "./images/AnimationImage.vue";
 
 export default {
   name: "HeroArea",
   components: {
     AboutMeImage,
     SimpleText,
-    TypedString
+    TypedString,
+    AnimationImage
   },
   data() {
     return {
