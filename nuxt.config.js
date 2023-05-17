@@ -1,5 +1,9 @@
 export default {
   mode: "universal",
+  //404 solution
+  generate: {
+    fallback: true
+  },
   /*
    ** Headers of the page
    */
@@ -78,5 +82,6 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  }
+  },
+  
 };
