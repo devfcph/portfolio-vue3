@@ -1,10 +1,10 @@
 <template>
   <div class="col-md-6">
     <div class="progress-wrap">
-      <h5>{{ skill.title }}</h5>
-      <div class="progress">
-        <div class="progress-bar" :style="'width: ' + skill.percent">
-          <span>{{ skill.percent }}</span>
+      <h5>{{ itemSkill.title }}</h5>
+      <div class="progress" v-show="itemSkill.percent.isVisible">
+        <div class="progress-bar" :style="'width: ' + itemSkill.percent.value">
+          <span>{{ itemSkill.percent.value }}</span>
         </div>
       </div>
     </div>
@@ -15,6 +15,11 @@
 export default {
     props: {
         skill: Object
+    },
+    data() {
+      return {
+        itemSkill: this.skill
+      }
     }
 };
 </script>

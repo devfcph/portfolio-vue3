@@ -40,12 +40,12 @@
           </div>
           <!-- End Experience -->
 
-          <!-- Start Skills -->
+          <!-- Start Hard Skills -->
           <div id="page-3" class="page three">
-            <h3 class="heading">Skills</h3>
+            <h3 class="heading">Hard Skills</h3>
             <div class="row">
               <SkillProgressBarComponent
-                v-for="(skill, index) in skills"
+                v-for="(skill, index) in hardSkills"
                 v-bind:key="index"
                 v-bind:skill="skill"
               >
@@ -54,6 +54,23 @@
             </div>
           </div>
           <!-- End Skills -->
+
+
+          <!-- Start Soft Skills -->
+          <div id="page-3" class="page three">
+            <h3 class="heading">Hard Skills</h3>
+            <div class="row">
+              <SkillProgressBarComponent
+                v-for="(skill, index) in softSkills"
+                v-bind:key="index"
+                v-bind:skill="skill"
+              >
+                {{ skill }}
+              </SkillProgressBarComponent>
+            </div>
+          </div>
+          <!-- End Skills -->
+          
 
           <!-- Start Awards -->
           <div id="page-4" class="page four">
@@ -100,7 +117,7 @@ export default {
         { label: "Education", href: "#page-1" },
         { label: "Experience", href: "#page-2" },
         { label: "Skills", href: "#page-3" },
-        { label: "Awards", href: "#page-4" },
+        { label: "Courses", href: "#page-4" },
       ],
       sectionTitle: "Resume",
       experiences: [
@@ -155,10 +172,51 @@ export default {
           body: "CHEEMS",
         },
       ],
-      skills: [
-        { title: "A B C D E F G H", percent: "50%" },
-        { title: "A B C D E F G H", percent: "75%" },
-        { title: "A B C D E F G H", percent: "99%" },
+      hardSkills: [
+        {
+          title: "A B C D E F G H",
+          percent: {
+            value: "50%",
+            isVisible: false,
+          },
+        },
+        {
+          title: "A B C D E F G H",
+          percent: {
+            value: "50%",
+            isVisible: false,
+          },
+        },
+        {
+          title: "A B C D E F G H",
+          percent: {
+            value: "50%",
+            isVisible: true,
+          },
+        },
+        {
+          title: "A B C D E F G H",
+          percent: {
+            value: "50%",
+            isVisible: false,
+          },
+        },
+      ],
+      softSkills: [
+        {
+          title: "SOFT 1",
+          percent: {
+            value: "50%",
+            isVisible: false,
+          },
+        },
+        {
+          title: "SOFT 2",
+          percent: {
+            value: "50%",
+            isVisible: false,
+          },
+        },
       ],
       courses: [
         {
