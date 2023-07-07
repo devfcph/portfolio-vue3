@@ -55,10 +55,9 @@
           </div>
           <!-- End Skills -->
 
-
           <!-- Start Soft Skills -->
           <div id="page-3" class="page three">
-            <h3 class="heading">Hard Skills</h3>
+            <h3 class="heading">Soft Skills</h3>
             <div class="row">
               <SkillProgressBarComponent
                 v-for="(skill, index) in softSkills"
@@ -70,7 +69,6 @@
             </div>
           </div>
           <!-- End Skills -->
-          
 
           <!-- Start Awards -->
           <div id="page-4" class="page four">
@@ -101,7 +99,7 @@ import ResumeNavComponent from "./global/ResumeNav.vue";
 import TitleComponent from "./labels/SectionTitle.vue";
 import ItemCardComponent from "./cards/ResumeItemCard.vue";
 import SkillProgressBarComponent from "./global/SkillProgressBar.vue";
-import { typeOfIcon } from "../helpers/constants";
+import { typeOfIcon, fontType } from "../helpers/constants";
 
 export default {
   name: "ResumeArea",
@@ -162,14 +160,34 @@ export default {
           city: "Tuxtla Gutiérrez, Chiapas. México",
           title: "Software Development and Technology Engineering",
           place: "Autonomous University of Chiapas",
-          body: "Lorem ipsum, or lipsum as it is sometimes known",
+          body: [
+            { info: "Main topics: ", style: fontType.BOLD },
+            { info: "🔷  Object Oriented Programming [OOP]" },
+            { info: "🔷  Structured programming" },
+            { info: "🔷  Database Management" },
+            { info: "🔷  SOAP & REST services" },
+            { info: "🔷  Robotics & AI" },
+            { info: "🔷  Project management" },
+            { info: "🔷  Web Apps" },
+          ],
         },
         {
           date: "January 2020 - June 2020",
           city: "Tunja, Boyacá. Colombia",
           title: "Interchange Student",
           place: "University of Boyacá",
-          body: "CHEEMS",
+          body: [
+            { info: "I got a scholarship to study in Boyacá, Colombia." },
+            {
+              info: "Main learnings obtained during the school interchange period:",
+              style: fontType.BOLD,
+            },
+            { info: "🔷  Programation with Python as a language for Big Data." },
+            { info: "🔷  SQL as a tool to store big data." },
+            {
+              info: "🔷  Project management with agile software development methodologies.",
+            },
+          ],
         },
       ],
       hardSkills: [

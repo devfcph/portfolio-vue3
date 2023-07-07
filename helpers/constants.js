@@ -17,3 +17,10 @@ export const imagePath = Object.freeze({
     TESTIMONIAL_ONE: "https://via.placeholder.com/50x50",
 
 });
+
+export const fontType = Object.freeze({
+   BOLD: "font-weight-bold",
+   NORMAL: "font-weight-normal",
+   WEIGHT: "font-weight-light",
+   ITALIC: "font-italic"
+});

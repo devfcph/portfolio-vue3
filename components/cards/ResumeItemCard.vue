@@ -10,7 +10,15 @@
       <span>{{ infoItem.city }}</span>
       <h4>{{ infoItem.title }}</h4>
       <span class="position">{{ infoItem.place }}</span>
-      <p>{{ infoItem.body }}</p>
+      <hr>
+      <p
+        v-for="(item, index) in resumeItem"
+        v-bind:key="index"
+        :class="item.style"
+      >
+        {{ item.info }} 
+      </p>
+      <hr>
     </div>
   </div>
 </template>
@@ -25,7 +33,7 @@ export default {
   },
   data() {
     return {
-      //iconClass: this.icon,
+      resumeItem: this.infoItem.body,
     };
   },
 };
