@@ -68,16 +68,6 @@ export default {
           info: "devfcph@gmail.com",
           icon: typeOfIcon.EMAIL,
         },
-        {
-          title: "Phone",
-          info: "+52 961 372 34 12",
-          icon: typeOfIcon.PHONE,
-        },
-        {
-          title: "Skype",
-          info: "devfcph@gmail.com",
-          icon: typeOfIcon.SKYPE,
-        },
       ],
       inputs: [
         {
