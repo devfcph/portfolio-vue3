@@ -19,15 +19,19 @@
 </template>
 
 <script>
-import AboutMeInfo from './cards/AboutMe.vue';
-import AboutMeImage from './images/AboutMeImage.vue';
-
+import AboutMeInfo from "./cards/AboutMe.vue";
+import AboutMeImage from "./images/AboutMeImage.vue";
 
 export default {
-    name: "AboutArea",
-    components: {
-      AboutMeImage,
-      AboutMeInfo,
-    },
+  name: "AboutArea",
+  components: {
+    AboutMeImage,
+    AboutMeInfo,
+  },
+  data() {
+    return {
+      
+    };
+  },
 };
 </script>

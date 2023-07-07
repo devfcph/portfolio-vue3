@@ -12,20 +12,6 @@
           <!-- End Resume Nav -->
         </div>
         <div class="col-lg-9 col-md-12">
-          <!-- Start Education -->
-          <div id="page-1" class="page one">
-            <h3 class="heading">Education</h3>
-            <ItemCardComponent
-              v-bind:icon="icon.EDUCATION"
-              v-for="(school, index) in schools"
-              v-bind:key="index"
-              v-bind:infoItem="school"
-            >
-              {{ school }}
-            </ItemCardComponent>
-          </div>
-          <!-- End Education -->
-
           <!-- Start Experience -->
           <div id="page-2" class="page two">
             <h3 class="heading">Experience</h3>
@@ -39,6 +25,20 @@
             </ItemCardComponent>
           </div>
           <!-- End Experience -->
+
+          <!-- Start Education -->
+          <div id="page-1" class="page one">
+            <h3 class="heading">Education</h3>
+            <ItemCardComponent
+              v-bind:icon="icon.EDUCATION"
+              v-for="(school, index) in schools"
+              v-bind:key="index"
+              v-bind:infoItem="school"
+            >
+              {{ school }}
+            </ItemCardComponent>
+          </div>
+          <!-- End Education -->
 
           <!-- Start Hard Skills -->
           <div id="page-3" class="page three">
@@ -124,34 +124,63 @@ export default {
           city: "Mexico City. México",
           title: "Microservices Developer",
           place: "Grupo Salinas [Hybrid]",
-          body: "Lorem ipsum, or lipsum as it is sometimes known",
+          body: [
+            { info: "Skills:", style: fontType.BOLD },
+            { info: "✅ Java | SpringBoot " },
+            { info: "✅ Kafka" },
+            { info: "✅ CI/CD with Jenkins" },
+            { info: "✅ API Gateway with ApiGee" },
+          ],
         },
         {
           date: "Jul 2022 - Oct 2022",
           title: "iOS Mobile Developer",
           place: "Gonet [Remote]",
-          body: "CHEEMS",
+          body: [
+            { info: "Skills:", style: fontType.BOLD },
+            { info: "✅ Swift " },
+          ],
         },
         {
           date: "Oct 2020 - Oct 2022",
           city: "Tuxtla Gutiérrez, Chiapas. México",
           title: "Fullstack developer",
           place: "Secretaría de Hacienda del Estado de Chiapas [On site]",
-          body: "Lorem ipsum, or lipsum as it is sometimes known",
+          body: [
+            { info: "Skills:", style: fontType.BOLD },
+            { info: "✅ Microsoft SQL Server | Stored Procedures, Functions, Jobs " },
+            { info: "✅ .NET | Microservices, Web API " },
+            { info: "✅ VueJs | FrontEnd Apps" },
+          ],
         },
         {
           date: "Jul 2020 - Oct 2020",
           city: "Tuxtla Gutiérrez, Chiapas. México",
           title: "Fullstack developer",
           place: "Global Transfer [On site]",
-          body: "Lorem ipsum, or lipsum as it is sometimes known",
+          body: [
+            { info: "Skills:", style: fontType.BOLD },
+            { info: "✅ Microsoft SQL Server | Stored Procedures, Functions, Jobs " },
+            { info: "✅ C# | Restful Web Services" },
+            { info: "✅ Flutter | Mobile App" },
+            { info: "✅ Laravel | Web App" },
+          ],
         },
         {
           date: "Ago 2018 - Jan 2020",
           city: "Tuxtla Gutiérrez, Chiapas. México",
           title: "Fullstack developer",
           place: "Induxsoft Data Services [On site]",
-          body: "Lorem ipsum, or lipsum as it is sometimes known",
+          body: [
+            { info: "Skills:", style: fontType.BOLD },
+            { info: "✅ SQL Server | Stored Procedures, Functions, Jobs " },
+            { info: "✅ MySQL | Stored Procedures, Functions, Jobs " },
+            { info: "✅ C# | Console Applicatios, Monolithic Applications, SOAP Web services" },
+            { info: "✅ Javascript | Web apps" },
+            { info: "✅ PHP | Web Apps" },
+            { info: "✅ VB | Monolithic Applications" },
+            { info: "✅ Bootstrap | Web Apps " },
+          ],
         },
       ],
       schools: [
@@ -182,7 +211,9 @@ export default {
               info: "Main learnings obtained during the school interchange period:",
               style: fontType.BOLD,
             },
-            { info: "🔷  Programation with Python as a language for Big Data." },
+            {
+              info: "🔷  Programation with Python as a language for Big Data.",
+            },
             { info: "🔷  SQL as a tool to store big data." },
             {
               info: "🔷  Project management with agile software development methodologies.",
