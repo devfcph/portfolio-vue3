@@ -33,10 +33,10 @@ export default {
     ResumeArea,
     //WorksArea,
     //PriceArea,
-    HireArea,
+    //HireArea,
     TestimonialArea,
     //BlogArea,
-    ContactArea
+    //ContactArea
   }
 };
 </script>
