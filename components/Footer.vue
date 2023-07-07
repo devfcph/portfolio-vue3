@@ -6,16 +6,13 @@
         <div class="col-lg-12">
           <div class="footer-top flex-column">
             <div class="footer-logo text-center">
-              <a href="#">
-                <img src="assets/img//logo.png" alt="logo" />
-              </a>
-              <h4>Follow Me</h4>
+              <h4>More About me</h4>
             </div>
             <div class="footer-social text-center">
               <SocialNetwork
-              v-for="(logo, index) in logos"
-              v-bind:key="index"
-              v-bind:logo="logo"
+                v-for="(logo, index) in logos"
+                v-bind:key="index"
+                v-bind:logo="logo"
               ></SocialNetwork>
             </div>
           </div>
@@ -23,11 +20,8 @@
       </div>
       <div class="row footer-bottom text-center justify-content-center">
         <p class="col-lg-8 col-sm-12 footer-text">
-          Copyright ©All rights reserved | Cobra is made with
-          <i class="fa fa-heart-o" aria-hidden="true"></i> by
-          <a href="https://themeforest.net/user/karimezzat" target="_blank"
-            >KarimEzZat</a
-          >
+          Copyright ©All rights reserved | Francisco Pérez
+          <i class="fa fa-heart-o" aria-hidden="true"></i>
         </p>
       </div>
     </div>
@@ -47,20 +41,12 @@ export default {
     return {
       logos: [
         {
-          href: "#",
-          icon: typeOfIcon.FACEBOOK,
+          href: "https://www.linkedin.com/in/cris-hernandez-fcphdev",
+          icon: typeOfIcon.LINKEDIN,
         },
         {
           href: "#",
-          icon: typeOfIcon.TWITTER,
-        },
-        {
-          href: "#",
-          icon: typeOfIcon.DRIBBBLE,
-        },
-        {
-          href: "#",
-          icon: typeOfIcon.BEHANCE,
+          icon: typeOfIcon.REDDIT,
         },
       ],
     };

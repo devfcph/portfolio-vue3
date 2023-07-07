@@ -8,7 +8,9 @@ export const typeOfIcon = Object.freeze({
     FACEBOOK: "fa fa-facebook",
     TWITTER: "fa fa-twitter",
     DRIBBBLE: "fa fa-dribbble",
-    BEHANCE: "fa fa-behance"
+    BEHANCE: "fa fa-behance",
+    LINKEDIN: "fa fa-linkedin",
+    REDDIT: "fa fa-reddit"
 });
 
 export const imagePath = Object.freeze({

@@ -31,11 +31,11 @@ export default {
     ServiceArea,
     AboutArea,
     ResumeArea,
-    WorksArea,
-    PriceArea,
+    //WorksArea,
+    //PriceArea,
     HireArea,
     TestimonialArea,
-    BlogArea,
+    //BlogArea,
     ContactArea
   }
 };
