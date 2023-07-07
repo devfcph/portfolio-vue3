@@ -13,9 +13,7 @@
         v-bind:info="info"
       ></PersonalInfo>
     </ul>
-    <div class="download-btn mt-5">
-      <a class="btn radius-btn" href="#">Download Cv</a>
-    </div>
+    <DownloadCVArea></DownloadCVArea>
   </div>
   <!-- End About Detail -->
 </template>
@@ -24,12 +22,14 @@
 import PersonalInfo from "../labels/PersonalInfo.vue";
 import SimpleText from "../labels/SimpleText.vue";
 import SectionTitle from "../labels/SectionTitle.vue";
+import DownloadCVArea from "../DownloadCVArea.vue";
 
 export default {
   components: {
     PersonalInfo,
     SimpleText,
     SectionTitle,
+    DownloadCVArea,
   },
   data() {
     return {

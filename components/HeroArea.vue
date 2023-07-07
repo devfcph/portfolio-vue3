@@ -14,7 +14,6 @@
               <span class="LR-C" id="typed" style="white-space: pre"></span>
             </div>
             <SimpleText :text="phrase"></SimpleText>
-            <a href="#" class="btn radius-btn">Download</a>
           </div>
           <!-- End Hero Caption -->
         </div>
