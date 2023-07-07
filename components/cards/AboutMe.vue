@@ -39,7 +39,6 @@ export default {
         { title: "Address:", info: "Mexico City" },
         { title: "Zip code:", info: "01790" },
         { title: "Email:", info: "devfcph@gmail.com" },
-        { title: "Phone:", info: "+52 961 372 34 12" },
       ],
       iam1: "An enthusiastic software developer with over 4 years of IT work experience.",
       iam2: "I consider myself a person with logical and critical thinking, analytical and focused on problem solving. 🧠",

@@ -1,6 +1,6 @@
 <template>
   <li>
-    <span>{{ info.title }}:</span>
+    <span>{{ info.title }}</span>
     <span>{{ info.info }}</span>
   </li>
 </template>
