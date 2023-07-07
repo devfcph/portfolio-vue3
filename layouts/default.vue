@@ -30,7 +30,7 @@ export default {
   },
   head() {
     return {
-      title: "Cobra Vue Nuxt Personal Portfolio Template"
+      title: "Portfolio by Francisco Pérez"
     };
   },
   mounted() {
