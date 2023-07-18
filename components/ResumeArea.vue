@@ -78,7 +78,7 @@
               <ItemCardComponent
                 class="mx-auto col-sm-12 col-md-5 col-lg-5 col-xs-12 px-0"
                 v-bind:icon="icon.LEARN"
-                v-for="(course, index) in coursess"
+                v-for="(course, index) in courses"
                 v-bind:key="index"
                 v-bind:infoItem="course"
               >
@@ -131,57 +131,7 @@ export default {
       schools: Schools,
       hardSkills: HardSkills,
       softSkills: SoftSkills,
-      coursess: Courses,
-      courses: [
-        {
-          date: "January 2020 - June 2020",
-          title: "NOMBRE DEL CURSO",
-          place: "PLATZI ACADEMY",
-          body: "CHEEMS",
-        },
-        {
-          date: "January 2020 - June 2020",
-          title: "NOMBRE DEL CURSO",
-          place: "PLATZI ACADEMY",
-          body: "CHEEMS",
-        },
-        {
-          date: "January 2020 - June 2020",
-          title: "NOMBRE DEL CURSO",
-          place: "PLATZI ACADEMY",
-          body: "CHEEMS",
-        },
-        {
-          date: "January 2020 - June 2020",
-          title: "NOMBRE DEL CURSO",
-          place: "PLATZI ACADEMY",
-          body: "CHEEMS",
-        },
-        {
-          date: "January 2020 - June 2020",
-          title: "NOMBRE DEL CURSO",
-          place: "PLATZI ACADEMY",
-          body: "CHEEMS",
-        },
-        {
-          date: "January 2020 - June 2020",
-          title: "NOMBRE DEL CURSO",
-          place: "PLATZI ACADEMY",
-          body: "CHEEMS",
-        },
-        {
-          date: "January 2020 - June 2020",
-          title: "NOMBRE DEL CURSO",
-          place: "PLATZI ACADEMY",
-          body: "CHEEMS",
-        },
-        {
-          date: "January 2020 - June 2020",
-          title: "NOMBRE DEL CURSO",
-          place: "PLATZI ACADEMY",
-          body: "CHEEMS",
-        },
-      ],
+      courses: Courses,
       icon: typeOfIcon,
     };
   },

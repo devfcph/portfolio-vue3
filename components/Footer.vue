@@ -10,7 +10,7 @@
             </div>
             <div class="footer-social text-center">
               <SocialNetwork
-                v-for="(logo, index) in logos"
+                v-for="(logo, index) in socialMedia.LOGOS"
                 v-bind:key="index"
                 v-bind:logo="logo"
               ></SocialNetwork>
@@ -29,6 +29,7 @@
   <!-- End Footer -->
 </template>
 <script>
+import { SocialMedia } from "../store/data/socialmedia";
 import { typeOfIcon } from "../helpers/constants";
 import SocialNetwork from "./footer/SocialNetwork.vue";
 
@@ -39,6 +40,7 @@ export default {
   },
   data() {
     return {
+      socialMedia: SocialMedia,
       logos: [
         {
           href: "https://www.linkedin.com/in/cris-hernandez-fcphdev",
