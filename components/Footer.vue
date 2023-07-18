@@ -30,7 +30,6 @@
 </template>
 <script>
 import { SocialMedia } from "../store/data/socialmedia";
-import { typeOfIcon } from "../helpers/constants";
 import SocialNetwork from "./footer/SocialNetwork.vue";
 
 export default {
@@ -41,16 +40,6 @@ export default {
   data() {
     return {
       socialMedia: SocialMedia,
-      logos: [
-        {
-          href: "https://www.linkedin.com/in/cris-hernandez-fcphdev",
-          icon: typeOfIcon.LINKEDIN,
-        },
-        {
-          href: "#",
-          icon: typeOfIcon.REDDIT,
-        },
-      ],
     };
   },
 };
