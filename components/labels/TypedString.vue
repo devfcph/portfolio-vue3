@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: "TypedString",
     props: {
         text: String
     }

@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: "AnimationImage",
   computed: {
     getAnimationLogo() {
       return `${require(`@/static/assets/img/hero/hero-shape.png`)}`;

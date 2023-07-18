@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: "DownloadCVButton",
   props: {
     item: Object,
   },

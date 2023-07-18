@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: "Textarea",
   props: {
     textarea: Object,
   },

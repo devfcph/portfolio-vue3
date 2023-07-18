@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: "AboutMeImage",
   computed: {
     imgMe() {
       //return `${require(`@/static/assets/img/about/1082318.jpg`)}`;

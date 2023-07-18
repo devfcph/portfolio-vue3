@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: "HeaderLogo",
     computed: {
         getHeaderLogo() {
             return `${require(`@/static/assets/img/logo.png`)}`;

@@ -16,6 +16,7 @@
 import MenuItem from "./MenuItem.vue";
 
 export default {
+  name: "Menu",
   components: {
     MenuItem,
   },

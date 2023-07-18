@@ -13,6 +13,7 @@
 <script>
 
 export default {
+  name: "ContactMeIcon",
   props: {
     info: Object
   },

@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  name: "SectionTitle",
   props: {
     title: String
   }

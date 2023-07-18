@@ -13,6 +13,7 @@
 <script>
 import DownloadCVButton from "./buttons/DownloadCVButton.vue";
 export default {
+  name: "DownloadCVArea",
   components: {
     DownloadCVButton,
   },

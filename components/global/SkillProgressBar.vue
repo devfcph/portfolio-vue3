@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: "SkillProgressBar",
     props: {
         skill: Object
     },

@@ -16,6 +16,7 @@
 import SimpleText from "../labels/SimpleText.vue";
 
 export default {
+  name: "TestimonialItem",
   components: {
     SimpleText,
   },

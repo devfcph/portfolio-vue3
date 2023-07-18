@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  name: "ResumeNav",
   props: ["infoNav"],
 };
 </script>

@@ -4,6 +4,7 @@
 
 <script>
 export default {
+    name: "SocialNetwork",
     props: {
         logo: Object
     },

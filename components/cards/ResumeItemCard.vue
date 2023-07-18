@@ -27,6 +27,7 @@
 import { typeOfIcon } from "../../helpers/constants";
 
 export default {
+  name: "ResumeItemCard",
   props: {
     infoItem: Object,
     icon: typeOfIcon,
