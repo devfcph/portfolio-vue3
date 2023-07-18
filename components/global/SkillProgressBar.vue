@@ -21,6 +21,6 @@ export default {
       return {
         itemSkill: this.skill
       }
-    }
+    },
 };
 </script>

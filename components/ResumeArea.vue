@@ -9,12 +9,12 @@
         <div class="col-lg-3 d-none d-lg-block">
           <!-- Start Resume Nav -->
           <ResumeNavComponent v-bind:infoNav="infoNav"></ResumeNavComponent>
-          <!-- End Resume Nav -->
+          <!-- End Resume Nav  -->
         </div>
         <div class="col-lg-9 col-md-12">
           <!-- Start Experience -->
           <div id="page-2" class="page two">
-            <h3 class="heading">Experience</h3>
+            <h3 class="heading">ExperienceS</h3>
             <ItemCardComponent
               v-bind:icon="icon.EXPERIENCE"
               v-for="(experience, index) in experiences"
@@ -45,7 +45,7 @@
             <h3 class="heading">Hard Skills</h3>
             <div class="row">
               <SkillProgressBarComponent
-                v-for="(skill, index) in hardSkills"
+                v-for="(skill, index) in hardSkills.DATA"
                 v-bind:key="index"
                 v-bind:skill="skill"
               >
@@ -53,14 +53,15 @@
               </SkillProgressBarComponent>
             </div>
           </div>
-          <!-- End Skills -->
+          <!-- End Skills --> 
+
 
           <!-- Start Soft Skills -->
           <div id="page-3" class="page three">
             <h3 class="heading">Soft Skills</h3>
             <div class="row">
               <SkillProgressBarComponent
-                v-for="(skill, index) in softSkills"
+                v-for="(skill, index) in softSkills.DATA"
                 v-bind:key="index"
                 v-bind:skill="skill"
               >
@@ -77,7 +78,7 @@
               <ItemCardComponent
                 class="mx-auto col-sm-12 col-md-5 col-lg-5 col-xs-12 px-0"
                 v-bind:icon="icon.LEARN"
-                v-for="(course, index) in courses"
+                v-for="(course, index) in coursess"
                 v-bind:key="index"
                 v-bind:infoItem="course"
               >
@@ -95,6 +96,14 @@
 
 
 <script>
+import {
+  Experiences,
+  Schools,
+  HardSkills,
+  SoftSkills,
+  Courses,
+} from "../store/data/resume";
+
 import ResumeNavComponent from "./global/ResumeNav.vue";
 import TitleComponent from "./labels/SectionTitle.vue";
 import ItemCardComponent from "./cards/ResumeItemCard.vue";
@@ -118,155 +127,11 @@ export default {
         { label: "Courses", href: "#page-4" },
       ],
       sectionTitle: "Resume",
-      experiences: [
-        {
-          date: "Oct 2022 - Actuallity",
-          city: "Mexico City. México",
-          title: "Microservices Developer",
-          place: "Grupo Salinas [Hybrid]",
-          body: [
-            { info: "Skills:", style: fontType.BOLD },
-            { info: "✅ Java | SpringBoot " },
-            { info: "✅ Kafka" },
-            { info: "✅ CI/CD with Jenkins" },
-            { info: "✅ API Gateway with ApiGee" },
-          ],
-        },
-        {
-          date: "Jul 2022 - Oct 2022",
-          title: "iOS Mobile Developer",
-          place: "Gonet [Remote]",
-          body: [
-            { info: "Skills:", style: fontType.BOLD },
-            { info: "✅ Swift " },
-          ],
-        },
-        {
-          date: "Oct 2020 - Oct 2022",
-          city: "Tuxtla Gutiérrez, Chiapas. México",
-          title: "Fullstack developer",
-          place: "Secretaría de Hacienda del Estado de Chiapas [On site]",
-          body: [
-            { info: "Skills:", style: fontType.BOLD },
-            { info: "✅ Microsoft SQL Server | Stored Procedures, Functions, Jobs " },
-            { info: "✅ .NET | Microservices, Web API " },
-            { info: "✅ VueJs | FrontEnd Apps" },
-          ],
-        },
-        {
-          date: "Jul 2020 - Oct 2020",
-          city: "Tuxtla Gutiérrez, Chiapas. México",
-          title: "Fullstack developer",
-          place: "Global Transfer [On site]",
-          body: [
-            { info: "Skills:", style: fontType.BOLD },
-            { info: "✅ Microsoft SQL Server | Stored Procedures, Functions, Jobs " },
-            { info: "✅ C# | Restful Web Services" },
-            { info: "✅ Flutter | Mobile App" },
-            { info: "✅ Laravel | Web App" },
-          ],
-        },
-        {
-          date: "Ago 2018 - Jan 2020",
-          city: "Tuxtla Gutiérrez, Chiapas. México",
-          title: "Fullstack developer",
-          place: "Induxsoft Data Services [On site]",
-          body: [
-            { info: "Skills:", style: fontType.BOLD },
-            { info: "✅ SQL Server | Stored Procedures, Functions, Jobs " },
-            { info: "✅ MySQL | Stored Procedures, Functions, Jobs " },
-            { info: "✅ C# | Console Applicatios, Monolithic Applications, SOAP Web services" },
-            { info: "✅ Javascript | Web apps" },
-            { info: "✅ PHP | Web Apps" },
-            { info: "✅ VB | Monolithic Applications" },
-            { info: "✅ Bootstrap | Web Apps " },
-          ],
-        },
-      ],
-      schools: [
-        {
-          date: "2016 - 2022",
-          city: "Tuxtla Gutiérrez, Chiapas. México",
-          title: "Software Development and Technology Engineering",
-          place: "Autonomous University of Chiapas",
-          body: [
-            { info: "Main topics: ", style: fontType.BOLD },
-            { info: "🔷  Object Oriented Programming [OOP]" },
-            { info: "🔷  Structured programming" },
-            { info: "🔷  Database Management" },
-            { info: "🔷  SOAP & REST services" },
-            { info: "🔷  Robotics & AI" },
-            { info: "🔷  Project management" },
-            { info: "🔷  Web Apps" },
-          ],
-        },
-        {
-          date: "January 2020 - June 2020",
-          city: "Tunja, Boyacá. Colombia",
-          title: "Interchange Student",
-          place: "University of Boyacá",
-          body: [
-            { info: "I got a scholarship to study in Boyacá, Colombia." },
-            {
-              info: "Main learnings obtained during the school interchange period:",
-              style: fontType.BOLD,
-            },
-            {
-              info: "🔷  Programation with Python as a language for Big Data.",
-            },
-            { info: "🔷  SQL as a tool to store big data." },
-            {
-              info: "🔷  Project management with agile software development methodologies.",
-            },
-          ],
-        },
-      ],
-      hardSkills: [
-        {
-          title: "A B C D E F G H",
-          percent: {
-            value: "50%",
-            isVisible: false,
-          },
-        },
-        {
-          title: "A B C D E F G H",
-          percent: {
-            value: "50%",
-            isVisible: false,
-          },
-        },
-        {
-          title: "A B C D E F G H",
-          percent: {
-            value: "50%",
-            isVisible: true,
-          },
-        },
-        {
-          title: "A B C D E F G H",
-          percent: {
-            value: "50%",
-            isVisible: false,
-          },
-        },
-      ],
-      softSkills: [
-        {
-          title: "SOFT 1",
-          percent: {
-            value: "50%",
-            isVisible: false,
-          },
-        },
-        {
-          title: "SOFT 2",
-          percent: {
-            value: "50%",
-            isVisible: false,
-          },
-        },
-      ],
+      experiences: Experiences,
+      schools: Schools,
+      hardSkills: HardSkills,
+      softSkills: SoftSkills,
+      coursess: Courses,
       courses: [
         {
           date: "January 2020 - June 2020",
