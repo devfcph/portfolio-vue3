@@ -2,7 +2,7 @@
   <div class="row text-center">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
       <DownloadCVButton
-        v-for="(button, index) in buttons"
+        v-for="(button, index) in buttons.RESUMES"
         v-bind:key="index"
         v-bind:item="button"
       ></DownloadCVButton>
@@ -11,7 +11,9 @@
 </template>
 
 <script>
+import { ResumeFiles } from "../store/data/files";
 import DownloadCVButton from "./buttons/DownloadCVButton.vue";
+
 export default {
   name: "DownloadCVArea",
   components: {
@@ -19,11 +21,7 @@ export default {
   },
   data() {
     return {
-      buttons: [
-        { file: "#", label: "Download CV [EN]" },
-        { file: "#", label: "Download CV [ES]" },
-        { file: "#", label: "Download CV [AA]" },
-      ],
+      buttons: ResumeFiles,
     };
   },
 };
