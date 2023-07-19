@@ -8,7 +8,7 @@
           <div class="test-slider">
             <!-- start tetimonial item -->
             <TestimonialItem
-              v-for="(testimonial, index) in testimonials"
+              v-for="(testimonial, index) in this.testimonials"
               v-bind:key="index"
               v-bind:testimonial="testimonial"
             ></TestimonialItem>
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import { testimonials } from "../store/data/testimonial";
+
 import { imagePath } from "../helpers/constants";
 import TestimonialItem from "./global/TestimonialItem.vue";
 
@@ -33,22 +35,7 @@ export default {
   },
   data() {
     return {
-      testimonials: [
-        {
-          name: "ABDVSDVS",
-          position: "BSKDK KJHASD KF",
-          company: "ksahf akuef",
-          text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          image: imagePath.TESTIMONIAL_ONE,
-        },
-        {
-          name: "ABDVSDVS",
-          position: "BSKDK KJHASD KF",
-          company: "ksahf akuef",
-          text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          image: imagePath.TESTIMONIAL_ONE,
-        },
-      ],
+      testimonials: testimonials
     };
   },
 };

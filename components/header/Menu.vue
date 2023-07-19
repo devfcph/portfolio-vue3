@@ -24,11 +24,8 @@ export default {
     return {
       items: [
         { href: "#body", title: "Home" },
-        { href: "#services", title: "Services" },
         { href: "#about", title: "About" },
         { href: "#resume", title: "Resume" },
-        { href: "#works", title: "Works" },
-        { href: "#blog", title: "Blog" },
       ],
     };
   },
