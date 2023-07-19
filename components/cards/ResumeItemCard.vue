@@ -11,7 +11,7 @@
       <h4>
         {{ resumeItem.title }}
         <a
-          v-if="hasExternalLink"
+          v-if="hasExternalLink(resumeItem)"
           :href="resumeItem.externalLink"
           target="_blank"
           ><i class="fa fa-lg fa-external-link" aria-hidden="true"></i>
@@ -19,13 +19,20 @@
       </h4>
 
       <span class="position">{{ resumeItem.place }}</span>
-      <hr v-if="!hasExternalLink" />
+      <hr v-if="!hasExternalLink(resumeItem)" />
       <p
         v-for="(item, index) in resumeItem.body"
         v-bind:key="index"
         :class="item.style"
       >
-        {{ item.info }}
+         {{ item.info }}
+         <a
+          v-if="hasExternalLink(item)"
+          :href="item.externalLink"
+          target="_blank"
+          ><i class="fa fa-external-link" aria-hidden="true"></i>
+          <hr >
+        </a>
       </p>
     </div>
   </div>
@@ -45,9 +52,10 @@ export default {
       resumeItem: this.infoItem,
     };
   },
-  computed: {
-    hasExternalLink() {
-      return this.resumeItem.hasOwnProperty("externalLink");
+  methods: {
+    hasExternalLink: function(property) {
+      
+      return property.hasOwnProperty("externalLink");
     },
   },
 };

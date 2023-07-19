@@ -196,5 +196,53 @@ export const Courses = Object.freeze([
         externalLink: "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-FranciscoCrist%C3%B3balP%C3%A9rezHern%C3%A1ndez.-915871.pdf",
         body: "CHEEMS",
     },
-    
+    {
+        date: "2022 - 2023",
+        title: "CERTIFICATIONS BY PLATZI",
+        place: "PLATZI ACADEMY",
+        body: [
+            {
+                info: "Fundamentos de .NET",
+                style: fontType.BOLD,
+                externalLink: "https://platzi.com/p/devfcph/curso/2883-fundamentos-net/diploma/detalle/"
+            },
+            {
+                info: "Fundamentos de .NET",
+                style: fontType.BOLD,
+                externalLink: "https://platzi.com/p/devfcph/curso/2883-fundamentos-net/diploma/detalle/"
+            },
+            {
+                info: "Fundamentos de .NET",
+                style: fontType.BOLD,
+                externalLink: "https://platzi.com/p/devfcph/curso/2883-fundamentos-net/diploma/detalle/"
+            },
+            {
+                info: "Fundamentos de .NET",
+                style: fontType.BOLD,
+                externalLink: "https://platzi.com/p/devfcph/curso/2883-fundamentos-net/diploma/detalle/"
+            },
+            {
+                info: "Fundamentos de .NET",
+                style: fontType.BOLD,
+                externalLink: "https://platzi.com/p/devfcph/curso/2883-fundamentos-net/diploma/detalle/"
+            }
+        ],
+    },
+    {
+        date: "2022 - 2023",
+        title: "CERTIFICATIONS BY CODIGOFACILITO",
+        place: "CODIGOFACILITO",
+        body: [
+            {
+                info: "Fundamentos de .NET",
+                style: fontType.BOLD,
+                externalLink: "https://platzi.com/p/devfcph/curso/2883-fundamentos-net/diploma/detalle/"
+            },
+            {
+                info: "Fundamentos de .NET",
+                style: fontType.BOLD,
+                externalLink: "https://platzi.com/p/devfcph/curso/2883-fundamentos-net/diploma/detalle/"
+            },
+        ],
+    },
 ]);
