@@ -5,20 +5,28 @@
       <span :class="icon"></span>
     </div>
     <div class="text pl-3">
-      <span class="date">{{ infoItem.date }}</span>
+      <span class="date">{{ resumeItem.date }}</span>
       <br />
-      <span>{{ infoItem.city }}</span>
-      <h4>{{ infoItem.title }}</h4>
-      <span class="position">{{ infoItem.place }}</span>
-      <hr>
+      <span>{{ resumeItem.city }}</span>
+      <h4>
+        {{ resumeItem.title }}
+        <a
+          v-if="hasExternalLink"
+          :href="resumeItem.externalLink"
+          target="_blank"
+          ><i class="fa fa-lg fa-external-link" aria-hidden="true"></i>
+        </a>
+      </h4>
+
+      <span class="position">{{ resumeItem.place }}</span>
+      <hr v-if="!hasExternalLink" />
       <p
-        v-for="(item, index) in resumeItem"
+        v-for="(item, index) in resumeItem.body"
         v-bind:key="index"
         :class="item.style"
       >
-        {{ item.info }} 
+        {{ item.info }}
       </p>
-      <hr>
     </div>
   </div>
 </template>
@@ -34,8 +42,13 @@ export default {
   },
   data() {
     return {
-      resumeItem: this.infoItem.body,
+      resumeItem: this.infoItem,
     };
+  },
+  computed: {
+    hasExternalLink() {
+      return this.resumeItem.hasOwnProperty("externalLink");
+    },
   },
 };
 </script>
