@@ -2,7 +2,7 @@ const { fontType } = require("../../helpers/constants");
 
 export const Experiences = Object.freeze({
     GRUPO_SALINAS: {
-        date: "Oct 2022 - Actuallity PERROOOO",
+        date: "Oct 2022 - Actuallity",
         city: "Mexico City. México",
         title: "Microservices Developer",
         place: "Grupo Salinas [Hybrid]",
@@ -109,32 +109,12 @@ export const Schools = Object.freeze({
 
 export const HardSkills = Object.freeze({
     DATA: {
-        1: {
-            title: "xdfxds",
-            percent: {
-                value: "50%",
-                isVisible: false,
-            },
-        },
-        2: {
-            title: "A B C D E F G H",
-            percent: {
-                value: "50%",
-                isVisible: false,
-            },
-        },
+        
         3: {
             title: "A B C D E F G H",
             percent: {
                 value: "50%",
                 isVisible: true,
-            },
-        },
-        4: {
-            title: "A B C D E F G H",
-            percent: {
-                value: "50%",
-                isVisible: false,
             },
         },
     }
@@ -144,13 +124,6 @@ export const SoftSkills = Object.freeze({
     DATA: {
         1: {
             title: "SOFT XDXDDX",
-            percent: {
-                value: "50%",
-                isVisible: false,
-            },
-        },
-        2: {
-            title: "SOFT XDXDX",
             percent: {
                 value: "50%",
                 isVisible: false,
