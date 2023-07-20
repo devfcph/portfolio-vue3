@@ -87,7 +87,7 @@ export const Schools = Object.freeze({
     UNIBOYACA: {
         date: "January 2020 - June 2020",
         city: "Tunja, Boyacá. Colombia",
-        title: "Interchange Student",
+        title: "Exchange Student",
         place: "University of Boyacá",
         body: [
             { info: "I got a scholarship to study in Boyacá, Colombia." },

@@ -8,11 +8,4 @@ export const testimonials = Object.freeze([
         text: "Lorem Ipsum",
         image: imagePath.TESTIMONIAL_ONE,
     },
-    {
-        name: "Gaby Ordoñez",
-        position: "API Developer | Fullstack Developer",
-        company: "Grupo Salinas | Freelancer",
-        text: "Lorem Ipsum is simply dummy",
-        image: imagePath.TESTIMONIAL_ONE,
-    },
 ]);

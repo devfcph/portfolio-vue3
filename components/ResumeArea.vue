@@ -14,7 +14,7 @@
         <div class="col-lg-9 col-md-12">
           <!-- Start Experience -->
           <div id="page-2" class="page two">
-            <h3 class="heading">ExperienceS</h3>
+            <h3 class="heading">Experiences</h3>
             <ItemCardComponent
               v-bind:icon="icon.EXPERIENCE"
               v-for="(experience, index) in experiences"
@@ -121,8 +121,8 @@ export default {
   data() {
     return {
       infoNav: [
-        { label: "Education", href: "#page-1" },
         { label: "Experience", href: "#page-2" },
+        { label: "Education", href: "#page-1" },
         { label: "Skills", href: "#page-3" },
         { label: "Courses", href: "#page-4" },
       ],

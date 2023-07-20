@@ -2,6 +2,7 @@
   <!-- Start Testimonial Area -->
   <section class="testimonial-area section-padding">
     <div class="container">
+      <TitleComponent :title="sectionTitle"></TitleComponent>
       <div class="row">
         <div class="col-lg-6 offset-lg-3 col-md-12">
           <!-- start testimonial carousel -->
@@ -24,18 +25,19 @@
 
 <script>
 import { testimonials } from "../store/data/testimonial";
-
-import { imagePath } from "../helpers/constants";
 import TestimonialItem from "./global/TestimonialItem.vue";
+import TitleComponent from "./labels/SectionTitle.vue";
 
 export default {
   name: "TestimonialArea",
   components: {
     TestimonialItem,
+    TitleComponent
   },
   data() {
     return {
-      testimonials: testimonials
+      testimonials: testimonials,
+      sectionTitle: "Testimonials"
     };
   },
 };
