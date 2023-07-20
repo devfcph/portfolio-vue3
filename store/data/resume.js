@@ -196,6 +196,10 @@ export const Courses = Object.freeze([
         externalLink: "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-FranciscoCrist%C3%B3balP%C3%A9rezHern%C3%A1ndez.-915871.pdf",
         body: "CHEEMS",
     },
+
+]);
+
+export const OtherCourses = Object.freeze([
     {
         date: "2022 - 2023",
         title: "CERTIFICATIONS BY PLATZI",

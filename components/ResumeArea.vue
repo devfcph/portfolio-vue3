@@ -85,6 +85,18 @@
                 {{ course }}
               </ItemCardComponent>
             </div>
+            <br>
+            <div class="row">
+              <ItemCardComponent
+                class="mx-auto col-sm-12 col-md-5 col-lg-5 col-xs-12 px-0"
+                v-bind:icon="icon.LEARN"
+                v-for="(course, index) in otherCourses"
+                v-bind:key="index"
+                v-bind:infoItem="course"
+              >
+                {{ course }}
+              </ItemCardComponent>
+            </div>
           </div>
           <!-- End Awards -->
         </div>
@@ -102,13 +114,14 @@ import {
   HardSkills,
   SoftSkills,
   Courses,
+  OtherCourses
 } from "../store/data/resume";
 
 import ResumeNavComponent from "./global/ResumeNav.vue";
 import TitleComponent from "./labels/SectionTitle.vue";
 import ItemCardComponent from "./cards/ResumeItemCard.vue";
 import SkillProgressBarComponent from "./global/SkillProgressBar.vue";
-import { typeOfIcon, fontType } from "../helpers/constants";
+import { typeOfIcon } from "../helpers/constants";
 
 export default {
   name: "ResumeArea",
@@ -132,6 +145,7 @@ export default {
       hardSkills: HardSkills,
       softSkills: SoftSkills,
       courses: Courses,
+      otherCourses: OtherCourses,
       icon: typeOfIcon,
     };
   },
