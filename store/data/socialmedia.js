@@ -6,9 +6,5 @@ export const SocialMedia = Object.freeze({
             href: "https://www.linkedin.com/in/cris-hernandez-fcphdev",
             icon: typeOfIcon.LINKEDIN,
         },
-        REDDIT: {
-            href: "#",
-            icon: typeOfIcon.REDDIT,
-        },
     }
 });

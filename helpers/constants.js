@@ -15,6 +15,7 @@ export const typeOfIcon = Object.freeze({
 
 export const imagePath = Object.freeze({
     TESTIMONIAL_ONE: "https://via.placeholder.com/50x50",
+    RAUL_VAZQUEZ: "raul.jpg"
 
 });
 
