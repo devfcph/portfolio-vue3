@@ -157,10 +157,10 @@ export const HardSkills = Object.freeze([
     },
     {
         title: "PYTHON",
-        experience: 5,
+        experience: 4,
         isYear: false,
         percent: {
-            value: percentExperience(5, false) + "%",
+            value: percentExperience(4, false) + "%",
             isVisible: true,
         },
     },
