@@ -1,5 +1,5 @@
 const { fontType, numbers } = require("../../helpers/constants");
-import { percentExperience } from "../../helpers/functions"; 
+import { percentExperience } from "../../helpers/functions";
 
 
 export const Experiences = Object.freeze({
@@ -109,98 +109,191 @@ export const Schools = Object.freeze({
 });
 
 
-export const HardSkills = Object.freeze([
-    {
-        title: "JAVA",
-        experience: 2,
-        isYear: true,
-        percent: {
-            value: percentExperience(2) + "%",
-            isVisible: true,
-        },
+export const HardSkills = Object.freeze({
+
+    BACKEND: {
+        title: "BACK-END",
+        techs:
+            [
+                {
+                    title: "C# | .NET",
+                    experience: 4,
+                    isYear: true,
+                    percent: {
+                        value: percentExperience(4) + "%",
+                        isVisible: true,
+                    },
+                },
+                {
+                    title: "JAVA",
+                    experience: 2,
+                    isYear: true,
+                    percent: {
+                        value: percentExperience(2) + "%",
+                        isVisible: true,
+                    },
+                },
+
+                {
+                    title: "PHP",
+                    experience: 2,
+                    isYear: true,
+                    percent: {
+                        value: percentExperience(2) + "%",
+                        isVisible: true,
+                    },
+                },
+                {
+                    title: "PYTHON",
+                    experience: 4,
+                    isYear: false,
+                    percent: {
+                        value: percentExperience(4, false) + "%",
+                        isVisible: true,
+                    },
+                },
+            ],
     },
-    {
-        title: "C# | .NET",
-        experience: 4,
-        isYear: true,
-        percent: {
-            value: percentExperience(4) + "%",
-            isVisible: true,
-        },
+    FRONTEND: {
+        title: "FRONT-END",
+        techs:
+            [
+                {
+                    title: "HTML 5",
+                    experience: 4,
+                    isYear: true,
+                    percent: {
+                        value: percentExperience(4) + "%",
+                        isVisible: true,
+                    },
+                },
+                {
+                    title: "VUE JS",
+                    experience: 1,
+                    isYear: true,
+                    percent: {
+                        value: percentExperience(1) + "%",
+                        isVisible: true,
+                    },
+                },
+                {
+                    title: "REACT",
+                    experience: 4,
+                    isYear: false,
+                    percent: {
+                        value: percentExperience(4, false) + "%",
+                        isVisible: true,
+                    },
+                },
+                {
+                    title: "ANGULAR",
+                    experience: 2,
+                    isYear: false,
+                    percent: {
+                        value: percentExperience(3, false) + "%",
+                        isVisible: true,
+                    },
+                },
+            ]
     },
-    {
-        title: "PHP",
-        experience: 2,
-        isYear: true,
-        percent: {
-            value: percentExperience(2) + "%",
-            isVisible: true,
-        },
+    DATABASE: {
+        title: "DATABASE",
+        techs: [
+            {
+                title: "SQL SERVER",
+                experience: 3,
+                isYear: true,
+                percent: {
+                    value: percentExperience(3) + "%",
+                    isVisible: true,
+                },
+            },
+            {
+                title: "MYSQL",
+                experience: 2,
+                isYear: true,
+                percent: {
+                    value: percentExperience(2) + "%",
+                    isVisible: true,
+                },
+            },
+            {
+                title: "MONGO DB",
+                experience: 4,
+                isYear: false,
+                percent: {
+                    value: percentExperience(4, false) + "%",
+                    isVisible: true,
+                },
+            },
+            {
+                title: "PL/SQL",
+                experience: 3,
+                isYear: false,
+                percent: {
+                    value: percentExperience(3, false) + "%",
+                    isVisible: true,
+                },
+            },
+        ]
     },
-    {
-        title: "SWIFT | FRONTEND",
-        experience: 4,
-        isYear: false,
-        percent: {
-            value: percentExperience(4, false) + "%",
-            isVisible: true,
-        },
+    MOBILE: {
+        title: "MOBILE",
+        techs: [
+            {
+                title: "SWIFT | FRONTEND",
+                experience: 4,
+                isYear: false,
+                percent: {
+                    value: percentExperience(4, false) + "%",
+                    isVisible: true,
+                },
+            },
+            {
+                title: "FLUTTER",
+                experience: 3,
+                isYear: false,
+                percent: {
+                    value: percentExperience(3, false) + "%",
+                    isVisible: true,
+                },
+            },
+        ]
     },
-    {
-        title: "VUE JS",
-        experience: 1,
-        isYear: true,
-        percent: {
-            value: percentExperience(1) + "%",
-            isVisible: true,
-        },
-    },
-    {
-        title: "PYTHON",
-        experience: 4,
-        isYear: false,
-        percent: {
-            value: percentExperience(4, false) + "%",
-            isVisible: true,
-        },
-    },
-    {
-        title: "MONGO DB",
-        experience: 4,
-        isYear: false,
-        percent: {
-            value: percentExperience(4, false) + "%",
-            isVisible: true,
-        },
-    },
-    {
-        title: "SQL SERVER",
-        experience: 2,
-        isYear: true,
-        percent: {
-            value: percentExperience(2) + "%",
-            isVisible: true,
-        },
-    },
-    {
-        title: "MYSQL",
-        experience: 2,
-        isYear: true,
-        percent: {
-            value: percentExperience(2) + "%",
-            isVisible: true,
-        },
-    },
-    {
-        title: "APIS REST / SOAP",
-        experience: 4,
-        isYear: true,
-        percent: {
-            value: percentExperience(4) + "%",
-            isVisible: true,
-        },
-    },
-]);
+    OTHER_TECHS: {
+        title: "OTHER TECHS",
+        techs: [
+            {
+                title: "APIS REST / SOAP",
+                experience: 5,
+                isYear: true,
+                percent: {
+                    value: percentExperience(5) + "%",
+                    isVisible: true,
+                },
+            },
+            {
+                title: "XML | JSON",
+                experience: 3,
+                isYear: true,
+                percent: {
+                    value: percentExperience(3) + "%",
+                    isVisible: true,
+                },
+            },
+            {
+                title: "DOCKER",
+                experience: 3,
+                isYear: false,
+                percent: {
+                    value: percentExperience(3, false) + "%",
+                    isVisible: true,
+                },
+            },
+            
+        ]
+    }
+});
 
 export const SoftSkills = Object.freeze([
     {

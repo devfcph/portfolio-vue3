@@ -43,18 +43,83 @@
           <!-- Start Hard Skills -->
           <div id="page-3" class="page three">
             <h3 class="heading">Hard Skills</h3>
+
+            <div class="text-center">
+              <h3>{{ hardSkills.BACKEND.title }}</h3>
+            </div>
+            <br />
             <div class="row">
               <SkillProgressBarComponent
-                v-for="(skill, index) in hardSkills"
+                v-for="(skill, index) in hardSkills.BACKEND.techs"
                 v-bind:key="index"
                 v-bind:skill="skill"
+                v-bind:subtitle="hardSkills.BACKEND.title"
+              >
+                {{ skill }}
+              </SkillProgressBarComponent>
+            </div>
+
+            <div class="text-center">
+              <h3>{{ hardSkills.FRONTEND.title }}</h3>
+            </div>
+            <br />
+            <div class="row">
+              <SkillProgressBarComponent
+                v-for="(skill, index) in hardSkills.FRONTEND.techs"
+                v-bind:key="index"
+                v-bind:skill="skill"
+                v-bind:subtitle="hardSkills.BACKEND.title"
+              >
+                {{ skill }}
+              </SkillProgressBarComponent>
+            </div>
+
+            <div class="text-center">
+              <h3>{{ hardSkills.MOBILE.title }}</h3>
+            </div>
+            <br />
+            <div class="row">
+              <SkillProgressBarComponent
+                v-for="(skill, index) in hardSkills.MOBILE.techs"
+                v-bind:key="index"
+                v-bind:skill="skill"
+                v-bind:subtitle="hardSkills.BACKEND.title"
+              >
+                {{ skill }}
+              </SkillProgressBarComponent>
+            </div>
+
+            <div class="text-center">
+              <h3>{{ hardSkills.DATABASE.title }}</h3>
+            </div>
+            <br />
+            <div class="row">
+              <SkillProgressBarComponent
+                v-for="(skill, index) in hardSkills.DATABASE.techs"
+                v-bind:key="index"
+                v-bind:skill="skill"
+                v-bind:subtitle="hardSkills.BACKEND.title"
+              >
+                {{ skill }}
+              </SkillProgressBarComponent>
+            </div>
+
+            <div class="text-center">
+              <h3>{{ hardSkills.OTHER_TECHS.title }}</h3>
+            </div>
+            <br />
+            <div class="row">
+              <SkillProgressBarComponent
+                v-for="(skill, index) in hardSkills.OTHER_TECHS.techs"
+                v-bind:key="index"
+                v-bind:skill="skill"
+                v-bind:subtitle="hardSkills.BACKEND.title"
               >
                 {{ skill }}
               </SkillProgressBarComponent>
             </div>
           </div>
-          <!-- End Skills --> 
-
+          <!-- End Skills -->
 
           <!-- Start Soft Skills -->
           <div id="page-3" class="page three">
@@ -85,7 +150,7 @@
                 {{ course }}
               </ItemCardComponent>
             </div>
-            <br>
+            <br />
             <!--
             <div class="row">
               <ItemCardComponent
@@ -115,7 +180,7 @@ import {
   HardSkills,
   SoftSkills,
   Courses,
-  OtherCourses
+  OtherCourses,
 } from "../store/data/resume";
 
 import ResumeNavComponent from "./global/ResumeNav.vue";
