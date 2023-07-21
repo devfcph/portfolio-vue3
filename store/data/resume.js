@@ -1,4 +1,6 @@
-const { fontType } = require("../../helpers/constants");
+const { fontType, numbers } = require("../../helpers/constants");
+import { percentExperience } from "../../helpers/functions"; 
+
 
 export const Experiences = Object.freeze({
     GRUPO_SALINAS: {
@@ -92,7 +94,7 @@ export const Schools = Object.freeze({
         body: [
             { info: "I got a scholarship to study in Boyacá, Colombia." },
             {
-                info: "Main learnings obtained during the school interchange period:",
+                info: "Main learnings obtained during the school exchange period:",
                 style: fontType.BOLD,
             },
             {
@@ -107,30 +109,143 @@ export const Schools = Object.freeze({
 });
 
 
-export const HardSkills = Object.freeze({
-    DATA: {
-        
-        3: {
-            title: "A B C D E F G H",
-            percent: {
-                value: "50%",
-                isVisible: true,
-            },
+export const HardSkills = Object.freeze([
+    {
+        title: "JAVA",
+        experience: 2,
+        isYear: true,
+        percent: {
+            value: percentExperience(2) + "%",
+            isVisible: true,
         },
-    }
-});
+    },
+    {
+        title: "C# | .NET",
+        experience: 4,
+        isYear: true,
+        percent: {
+            value: percentExperience(4) + "%",
+            isVisible: true,
+        },
+    },
+    {
+        title: "PHP",
+        experience: 2,
+        isYear: true,
+        percent: {
+            value: percentExperience(2) + "%",
+            isVisible: true,
+        },
+    },
+    {
+        title: "SWIFT | FRONTEND",
+        experience: 4,
+        isYear: false,
+        percent: {
+            value: percentExperience(4, false) + "%",
+            isVisible: true,
+        },
+    },
+    {
+        title: "VUE JS",
+        experience: 1,
+        isYear: true,
+        percent: {
+            value: percentExperience(1) + "%",
+            isVisible: true,
+        },
+    },
+    {
+        title: "PYTHON",
+        experience: 5,
+        isYear: false,
+        percent: {
+            value: percentExperience(5, false) + "%",
+            isVisible: true,
+        },
+    },
+    {
+        title: "MONGO DB",
+        experience: 4,
+        isYear: false,
+        percent: {
+            value: percentExperience(4, false) + "%",
+            isVisible: true,
+        },
+    },
+    {
+        title: "SQL SERVER",
+        experience: 2,
+        isYear: true,
+        percent: {
+            value: percentExperience(2) + "%",
+            isVisible: true,
+        },
+    },
+    {
+        title: "MYSQL",
+        experience: 2,
+        isYear: true,
+        percent: {
+            value: percentExperience(2) + "%",
+            isVisible: true,
+        },
+    },
+    {
+        title: "APIS REST / SOAP",
+        experience: 4,
+        isYear: true,
+        percent: {
+            value: percentExperience(4) + "%",
+            isVisible: true,
+        },
+    },
+]);
 
-export const SoftSkills = Object.freeze({
-    DATA: {
-        1: {
-            title: "SOFT XDXDDX",
-            percent: {
-                value: "50%",
-                isVisible: false,
-            },
+export const SoftSkills = Object.freeze([
+    {
+        title: "SELF-TAUGHT",
+        percent: {
+            value: "100%",
+            isVisible: false,
         },
-    }
-});
+    },
+    {
+        title: "RESPONSIBLE",
+        percent: {
+            value: "100%",
+            isVisible: false,
+        },
+    },
+    {
+        title: "COLLABORATIVE",
+        percent: {
+            value: "100%",
+            isVisible: false,
+        },
+    },
+    {
+        title: "ANALYTICAL",
+        percent: {
+            value: "100%",
+            isVisible: false,
+        },
+    },
+    {
+        title: "PERSISTENT",
+        percent: {
+            value: "100%",
+            isVisible: false,
+        },
+    },
+    {
+        title: "TEAM WORKER",
+        percent: {
+            value: "100%",
+            isVisible: false,
+        },
+    },
+]);
 
 
 export const Courses = Object.freeze([

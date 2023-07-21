@@ -24,3 +24,9 @@ export const fontType = Object.freeze({
    WEIGHT: "font-weight-light",
    ITALIC: "font-italic"
 });
+
+
+export const numbers = Object.freeze({
+    YEARS_OF_EXPERIENCE: 5,
+    MONTHS: 11
+});

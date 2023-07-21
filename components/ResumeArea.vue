@@ -45,7 +45,7 @@
             <h3 class="heading">Hard Skills</h3>
             <div class="row">
               <SkillProgressBarComponent
-                v-for="(skill, index) in hardSkills.DATA"
+                v-for="(skill, index) in hardSkills"
                 v-bind:key="index"
                 v-bind:skill="skill"
               >
@@ -61,7 +61,7 @@
             <h3 class="heading">Soft Skills</h3>
             <div class="row">
               <SkillProgressBarComponent
-                v-for="(skill, index) in softSkills.DATA"
+                v-for="(skill, index) in softSkills"
                 v-bind:key="index"
                 v-bind:skill="skill"
               >
