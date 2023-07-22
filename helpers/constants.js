@@ -10,7 +10,8 @@ export const typeOfIcon = Object.freeze({
     DRIBBBLE: "fa fa-dribbble",
     BEHANCE: "fa fa-behance",
     LINKEDIN: "fa fa-linkedin",
-    REDDIT: "fa fa-reddit"
+    REDDIT: "fa fa-reddit",
+    GITHUB: "fa fa-github",
 });
 
 export const imagePath = Object.freeze({

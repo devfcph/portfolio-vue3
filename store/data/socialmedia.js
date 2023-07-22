@@ -6,5 +6,9 @@ export const SocialMedia = Object.freeze({
             href: "https://www.linkedin.com/in/cris-hernandez-fcphdev",
             icon: typeOfIcon.LINKEDIN,
         },
+        GITHUB: {
+            href: "https://github.com/devfcph",
+            icon: typeOfIcon.GITHUB,
+        },
     }
 });
