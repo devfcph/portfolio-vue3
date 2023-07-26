@@ -4,7 +4,7 @@
     <!-- <ServiceArea /> -->
     <AboutArea></AboutArea>
     <ResumeArea></ResumeArea>
-    <TestimonialArea></TestimonialArea>
+    <!--<TestimonialArea></TestimonialArea>-->
     
   </div>
 </template>
