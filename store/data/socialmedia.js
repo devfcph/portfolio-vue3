@@ -10,5 +10,9 @@ export const SocialMedia = Object.freeze({
             href: "https://github.com/devfcph",
             icon: typeOfIcon.GITHUB,
         },
+        TELEGRAM: {
+            href: "https://t.me/cris_dev",
+            icon: typeOfIcon.TELEGRAM,
+        },
     }
 });
