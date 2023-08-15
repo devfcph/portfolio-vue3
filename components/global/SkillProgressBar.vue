@@ -8,7 +8,7 @@
           <span> {{ itemSkill.experience }} </span>
         </div>
       </div>
-      <p v-if="hasYearsOfExperience(itemSkill)">
+      <p v-if="hasYearsOfExperience(itemSkill) && itemSkill.percent.isVisible">
         <b>{{ getTimeLabel(itemSkill) }} </b> OF EXPERIENCE
       </p>
     </div>

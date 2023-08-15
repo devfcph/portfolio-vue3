@@ -121,7 +121,7 @@ export const HardSkills = Object.freeze({
                     isYear: true,
                     percent: {
                         value: percentExperience(4) + "%",
-                        isVisible: true,
+                        isVisible: false,
                     },
                 },
                 {
@@ -130,7 +130,7 @@ export const HardSkills = Object.freeze({
                     isYear: true,
                     percent: {
                         value: percentExperience(2) + "%",
-                        isVisible: true,
+                        isVisible: false,
                     },
                 },
 
@@ -140,7 +140,7 @@ export const HardSkills = Object.freeze({
                     isYear: true,
                     percent: {
                         value: percentExperience(2) + "%",
-                        isVisible: true,
+                        isVisible: false,
                     },
                 },
                 {
@@ -149,7 +149,7 @@ export const HardSkills = Object.freeze({
                     isYear: false,
                     percent: {
                         value: percentExperience(4, false) + "%",
-                        isVisible: true,
+                        isVisible: false,
                     },
                 },
             ],
@@ -164,7 +164,7 @@ export const HardSkills = Object.freeze({
                     isYear: true,
                     percent: {
                         value: percentExperience(4) + "%",
-                        isVisible: true,
+                        isVisible: false,
                     },
                 },
                 {
@@ -173,7 +173,7 @@ export const HardSkills = Object.freeze({
                     isYear: true,
                     percent: {
                         value: percentExperience(1) + "%",
-                        isVisible: true,
+                        isVisible: false,
                     },
                 },
                 {
@@ -182,7 +182,7 @@ export const HardSkills = Object.freeze({
                     isYear: false,
                     percent: {
                         value: percentExperience(4, false) + "%",
-                        isVisible: true,
+                        isVisible: false,
                     },
                 },
                 {
@@ -191,7 +191,7 @@ export const HardSkills = Object.freeze({
                     isYear: false,
                     percent: {
                         value: percentExperience(3, false) + "%",
-                        isVisible: true,
+                        isVisible: false,
                     },
                 },
             ]
@@ -205,7 +205,7 @@ export const HardSkills = Object.freeze({
                 isYear: true,
                 percent: {
                     value: percentExperience(3) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
             {
@@ -214,7 +214,7 @@ export const HardSkills = Object.freeze({
                 isYear: true,
                 percent: {
                     value: percentExperience(2) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
             {
@@ -223,7 +223,7 @@ export const HardSkills = Object.freeze({
                 isYear: false,
                 percent: {
                     value: percentExperience(4, false) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
             {
@@ -232,7 +232,7 @@ export const HardSkills = Object.freeze({
                 isYear: false,
                 percent: {
                     value: percentExperience(3, false) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
         ]
@@ -246,7 +246,7 @@ export const HardSkills = Object.freeze({
                 isYear: false,
                 percent: {
                     value: percentExperience(4, false) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
             {
@@ -255,7 +255,7 @@ export const HardSkills = Object.freeze({
                 isYear: false,
                 percent: {
                     value: percentExperience(3, false) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
         ]
@@ -269,7 +269,7 @@ export const HardSkills = Object.freeze({
                 isYear: true,
                 percent: {
                     value: percentExperience(5) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
             {
@@ -278,7 +278,7 @@ export const HardSkills = Object.freeze({
                 isYear: true,
                 percent: {
                     value: percentExperience(3) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
             {
@@ -287,7 +287,7 @@ export const HardSkills = Object.freeze({
                 isYear: false,
                 percent: {
                     value: percentExperience(3, false) + "%",
-                    isVisible: true,
+                    isVisible: false,
                 },
             },
             

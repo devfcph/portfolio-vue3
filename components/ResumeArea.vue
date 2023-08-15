@@ -44,7 +44,7 @@
           <div id="page-3" class="page three">
             <h3 class="heading">Hard Skills</h3>
 
-            <div class="text-center">
+            <div class="text-left">
               <h3>{{ hardSkills.BACKEND.title }}</h3>
             </div>
             <br />
@@ -59,7 +59,7 @@
               </SkillProgressBarComponent>
             </div>
 
-            <div class="text-center">
+            <div class="text-left">
               <h3>{{ hardSkills.FRONTEND.title }}</h3>
             </div>
             <br />
@@ -74,7 +74,7 @@
               </SkillProgressBarComponent>
             </div>
 
-            <div class="text-center">
+            <div class="text-left">
               <h3>{{ hardSkills.MOBILE.title }}</h3>
             </div>
             <br />
@@ -89,7 +89,7 @@
               </SkillProgressBarComponent>
             </div>
 
-            <div class="text-center">
+            <div class="text-left">
               <h3>{{ hardSkills.DATABASE.title }}</h3>
             </div>
             <br />
@@ -104,7 +104,7 @@
               </SkillProgressBarComponent>
             </div>
 
-            <div class="text-center">
+            <div class="text-left">
               <h3>{{ hardSkills.OTHER_TECHS.title }}</h3>
             </div>
             <br />
