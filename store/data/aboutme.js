@@ -1,7 +1,7 @@
 export const AboutMeData = Object.freeze({
     DATA: {
         NAME : { title: "Name:", info: "Francisco Pérez" },
-        BIRTHDAY: { title: "Date of birth:", info: "October 12" },
+        AGE: { title: "Age:", info: "25 years old" },
         CITY: { title: "Address:", info: "Mexico City" },
         EMAIL: { title: "Email:", info: "devfcph@gmail.com" },
     },
