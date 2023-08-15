@@ -1,9 +1,8 @@
 export const AboutMeData = Object.freeze({
     DATA: {
-        NAME : { title: "Name:", info: "Francisco Cristóbal Pérez Hernández" },
-        BIRTHDAY: { title: "Date of birth:", info: "October 12, 1997" },
+        NAME : { title: "Name:", info: "Francisco Pérez" },
+        BIRTHDAY: { title: "Date of birth:", info: "October 12" },
         CITY: { title: "Address:", info: "Mexico City" },
-        ZIPCODE: { title: "Zip code:", info: "01790" },
         EMAIL: { title: "Email:", info: "devfcph@gmail.com" },
     },
     IAM1: "An enthusiastic software developer with over 5 years of IT work experience.",
