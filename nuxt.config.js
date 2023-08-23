@@ -34,6 +34,11 @@ export default {
         href:
           "https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900"
       },
+      {
+        rel: "stylesheet",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      },
 
       { rel: "stylesheet", href: "/assets/css/bootstrap.min.css" },
       { rel: "stylesheet", href: "/assets/css/font-awesome.min.css" },

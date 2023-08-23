@@ -14,5 +14,9 @@ export const SocialMedia = Object.freeze({
             href: "https://t.me/cris_dev",
             icon: typeOfIcon.TELEGRAM,
         },
+        DOCKER: {
+            href: "https://hub.docker.com/u/crishdzdev",
+            icon: typeOfIcon.DOCKER,
+        },
     }
 });

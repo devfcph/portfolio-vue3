@@ -12,7 +12,8 @@ export const typeOfIcon = Object.freeze({
     LINKEDIN: "fa fa-linkedin",
     REDDIT: "fa fa-reddit",
     GITHUB: "fa fa-github",
-    TELEGRAM: "fa fa-telegram"
+    TELEGRAM: "fa fa-telegram",
+    DOCKER: "fab fa-docker"
 });
 
 export const imagePath = Object.freeze({
