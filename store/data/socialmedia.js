@@ -18,5 +18,13 @@ export const SocialMedia = Object.freeze({
             href: "https://hub.docker.com/u/crishdzdev",
             icon: typeOfIcon.DOCKER,
         },
+        STACKOVERFLOW: {
+            href: "https://stackoverflow.com/users/22437732/francisco-pérez-hernández",
+            icon: typeOfIcon.STACKOVERFLOW,
+        },
+        REDDIT: {
+            href: "https://www.reddit.com/user/devfcph/",
+            icon: typeOfIcon.REDDIT,
+        },
     }
 });
