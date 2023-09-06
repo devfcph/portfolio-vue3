@@ -377,6 +377,13 @@ export const Courses = Object.freeze([
         externalLink: "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-FranciscoCrist%C3%B3balP%C3%A9rezHern%C3%A1ndez.-915871.pdf",
         body: "CHEEMS",
     },
+    {
+        date: "Sep 2023",
+        title: "AWS EDUCATE MACHINE LEARNING FOUNDATIONS",
+        place: "AMAZON TRAINING AND CERTIFICATION",
+        externalLink: "https://www.credly.com/badges/bdbb1122-e22b-428c-9fcd-0a97a2c60b10/public_url",
+        body: "CHEEMS",
+    },
 
 ]);
 
