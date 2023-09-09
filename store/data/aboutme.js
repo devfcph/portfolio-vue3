@@ -3,7 +3,7 @@ export const AboutMeData = Object.freeze({
         NAME : { title: "Name:", info: "Francisco Pérez" },
         AGE: { title: "Age:", info: "25 years old" },
         CITY: { title: "Address:", info: "Mexico City" },
-        EMAIL: { title: "Email:", info: "devfcph@gmail.com" },
+        EMAIL: { title: "Email:", info: "franciscoperez.softwaredev@gmail.com" },
     },
     IAM1: "An enthusiastic software developer with over 5 years of IT work experience.",
     IAM2: "I consider myself a person with logical and critical thinking, analytical and focused on problem solving. 🧠",
